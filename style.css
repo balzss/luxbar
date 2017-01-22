@@ -1,11 +1,26 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: #ddd;
     color: #212121;
+    padding-top: 76px;
+    font-weight: 300;
 }
 
 .container {
     max-width: 900px;
     margin: auto;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 2.6em;
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 76px;
 }
 

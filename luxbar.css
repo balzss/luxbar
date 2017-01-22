@@ -1,5 +1,18 @@
-.luxbar {
+.luxbar-default{
     width: 100%;
+    position: relative;
+}
+.luxbar-static {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.luxbar-fixed {
+    width: 100%;
+    position:fixed;
+    top: 0;
+    left: 0;
 }
 
 .luxbar-header {
@@ -17,14 +30,29 @@
 }
 
 .luxbar-menu {
-    /* position: absolute; */
-    max-height: 72px;
+    /* max-height: 72px; */
+    height: 72px;
     overflow: hidden;
-    transition: max-height .6s ease;
-    background-color: #212121;
-    color: #ccc;
+    /* transition: max-height .6s ease; */
+    transition: height .6s ease;
     width:100%;
 }
+
+.luxbar-menu-light {
+    color: #212121;
+    background-color: transparent;
+}
+
+.luxbar-menu-dark {
+    background-color: #212121;
+    color: #ccc;
+}
+
+.luxbar-menu-transparent {
+    color: #212121;
+    background-color: transparent;
+}
+
 .luxbar-navigation {
     display: flex;
     flex-direction: column;
@@ -39,6 +67,10 @@
 }
 
 .luxbar-menu .luxbar-item {
+}
+
+.luxbar-item a {
+    display: block;
     padding: 26px;
 }
 
@@ -79,7 +111,8 @@
 }
 
 #luxbar-checkbox:checked ~ .luxbar-menu {
-    max-height: 100vh;
+    /* max-height: 100vh; */
+    height: 100vh;
 }
 
 #luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger span {
