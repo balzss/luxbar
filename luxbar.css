@@ -1,0 +1,114 @@
+.luxbar {
+    width: 100%;
+}
+
+.luxbar-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+}
+
+.luxbar-brand {
+    font-size: 1.6em;
+    padding: 0px;
+    padding-left: 1em;
+}
+
+.luxbar-menu {
+    /* position: absolute; */
+    max-height: 72px;
+    overflow: hidden;
+    transition: max-height .6s ease;
+    background-color: #212121;
+    color: #ccc;
+    width:100%;
+}
+.luxbar-navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left:0;
+    margin: 0px;
+}
+
+.luxbar-menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.luxbar-menu .luxbar-item {
+    padding: 26px;
+}
+
+.luxbar-menu .luxbar-item:nth-child(2) {
+    border-top: 1px solid #2f2f2f;
+}
+
+.luxbar-menu .active,
+.luxbar-menu .luxbar-item:hover {
+    background-color: #333;
+}
+
+.luxbar-hamburger {
+    padding: 26px;
+}
+
+.luxbar-hamburger span::before {
+    margin-top: -8px;
+}
+
+.luxbar-hamburger span::after {
+    margin-top: 8px;
+}
+
+.luxbar-hamburger span::after, 
+.luxbar-hamburger span::before {
+    content: '';
+    position: absolute;
+}
+.luxbar-hamburger span::after, 
+.luxbar-hamburger span::before,
+.luxbar-hamburger span {
+    display: block;
+    height: 2px;
+    width: 25px;
+    background-color: #ddd;
+    transition: .6s ease-out;
+}
+
+#luxbar-checkbox:checked ~ .luxbar-menu {
+    max-height: 100vh;
+}
+
+#luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger span {
+    background-color: transparent;
+}
+#luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger span::before, 
+#luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger span::after {
+    margin-top: 0px;
+}
+#luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger span::before {
+    transform: rotate(225deg);
+}
+#luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger span::after {
+    transform: rotate(-225deg);
+}
+
+#luxbar-checkbox {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .luxbar-navigation {
+        flex-flow: row;
+        justify-content: flex-end;
+    }
+    .luxbar-header {
+        margin-right: auto;
+    }
+    .luxbar-hamburger {
+        display: none;
+    }
+}
