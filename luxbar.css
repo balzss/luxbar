@@ -1,13 +1,16 @@
+/*.luxbar styles: default, static, fixed*/
 .luxbar-default{
     width: 100%;
     position: relative;
 }
+
 .luxbar-static {
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
 }
+
 .luxbar-fixed {
     width: 100%;
     position:fixed;
@@ -15,6 +18,8 @@
     left: 0;
 }
 
+
+/*general luxbar specs*/
 .luxbar-header {
     display: flex;
     flex-direction: row;
@@ -26,31 +31,14 @@
 .luxbar-brand {
     font-size: 1.6em;
     padding: 0px;
-    padding-left: 1em;
+    padding-left: 26px;
 }
 
 .luxbar-menu {
-    /* max-height: 72px; */
     height: 72px;
     overflow: hidden;
-    /* transition: max-height .6s ease; */
     transition: height .6s ease;
     width:100%;
-}
-
-.luxbar-menu-light {
-    color: #212121;
-    background-color: transparent;
-}
-
-.luxbar-menu-dark {
-    background-color: #212121;
-    color: #ccc;
-}
-
-.luxbar-menu-transparent {
-    color: #212121;
-    background-color: transparent;
 }
 
 .luxbar-navigation {
@@ -66,22 +54,108 @@
     color: inherit;
 }
 
-.luxbar-menu .luxbar-item {
-}
-
 .luxbar-item a {
-    display: block;
     padding: 26px;
+    display: block;
 }
 
-.luxbar-menu .luxbar-item:nth-child(2) {
+
+/* default luxbar-menu themes: dark, light, transparent*/
+    /*luxbar-menu-light*/
+
+.luxbar-menu-light {
+    color: #212121;
+    background-color: #ddd;
+}
+
+.luxbar-menu-light .luxbar-item:nth-child(2) {
     border-top: 1px solid #2f2f2f;
 }
 
-.luxbar-menu .active,
-.luxbar-menu .luxbar-item:hover {
+.luxbar-menu-light .active,
+.luxbar-menu-light .luxbar-item:hover {
+    background-color: #ccc;
+}
+
+.luxbar-menu-light .luxbar-hamburger span::after,
+.luxbar-menu-light .luxbar-hamburger span::before,
+.luxbar-menu-light .luxbar-hamburger span {
+    background-color: #2f2f2f;
+}
+
+    /*luxbar-menu-dark*/
+
+.luxbar-menu-dark {
+    background-color: #212121;
+    color: #ddd;
+}
+
+.luxbar-menu-dark .luxbar-item:nth-child(2) {
+    border-top: 1px solid #ccc;
+}
+
+.luxbar-menu-dark .active,
+.luxbar-menu-dark .luxbar-item:hover {
     background-color: #333;
 }
+
+.luxbar-menu-dark .luxbar-hamburger span::after,
+.luxbar-menu-dark .luxbar-hamburger span::before,
+.luxbar-menu-dark .luxbar-hamburger span {
+    background-color: #ddd;
+}
+
+    /*luxbar-menu-transparent*/
+
+.luxbar-menu-transparent {
+    color: #212121;
+    background-color: transparent;
+}
+
+.luxbar-menu-transparent .luxbar-item:nth-child(2) {
+    border-top: 1px solid #2f2f2f;
+}
+
+.luxbar-menu-transparent .active,
+.luxbar-menu-transparent .luxbar-item:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.luxbar-menu-transparent .luxbar-hamburger span::after,
+.luxbar-menu-transparent .luxbar-hamburger span::before,
+.luxbar-menu-transparent .luxbar-hamburger span {
+    background-color: #2f2f2f;
+}
+
+
+/* material luxbar-menu themes: material-red, material-indigo, material-cyan, material-green,
+                                material-amber, material-brown, material-grey, material-bluegrey*/
+    /*luxbar-menu-material-red*/
+
+.luxbar-menu-material-red {
+    color: #fff;
+    background-color: #B71C1C;
+}
+
+.luxbar-menu-material-red .luxbar-item:nth-child(2) {
+    border-top: 1px solid #B71C1C;;
+}
+
+.luxbar-menu-material-red .active,
+.luxbar-menu-material-red .luxbar-item:hover {
+    background-color: #C62828;
+}
+
+.luxbar-menu-material-red .luxbar-hamburger span::after,
+.luxbar-menu-material-red .luxbar-hamburger span::before,
+.luxbar-menu-material-red .luxbar-hamburger span {
+    background-color: #fff;
+}
+
+
+
+/*general hamburger specs*/
 
 .luxbar-hamburger {
     padding: 26px;
@@ -95,43 +169,60 @@
     margin-top: 8px;
 }
 
-.luxbar-hamburger span::after, 
+.luxbar-hamburger span::after,
 .luxbar-hamburger span::before {
     content: '';
     position: absolute;
 }
-.luxbar-hamburger span::after, 
+.luxbar-hamburger span::after,
 .luxbar-hamburger span::before,
 .luxbar-hamburger span {
     display: block;
     height: 2px;
     width: 25px;
-    background-color: #ddd;
     transition: .6s ease-out;
 }
 
+#luxbar-checkbox {
+    display: none;
+}
+
 #luxbar-checkbox:checked ~ .luxbar-menu {
-    /* max-height: 100vh; */
     height: 100vh;
 }
 
 #luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger span {
     background-color: transparent;
 }
-#luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger span::before, 
+#luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger span::before,
 #luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger span::after {
     margin-top: 0px;
 }
-#luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger span::before {
+
+
+/*hamburger-themes: spin, doublespin*/
+    /*hamburger-spin*/
+
+#luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger-spin span::before {
+    transform: rotate(45deg);
+}
+
+#luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger-spin span::after {
+    transform: rotate(-45deg);
+}
+
+    /*hamburger-spin*/
+
+#luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger-doublespin span::before {
     transform: rotate(225deg);
 }
-#luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger span::after {
+
+#luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger-doublespin span::after {
     transform: rotate(-225deg);
 }
 
-#luxbar-checkbox {
-    display: none;
-}
+
+/*behavior under screenwidth 768*/
 
 @media screen and (min-width: 768px) {
     .luxbar-navigation {
@@ -143,5 +234,9 @@
     }
     .luxbar-hamburger {
         display: none;
+    }
+
+    .luxbar-menu .luxbar-item:nth-child(2) {
+        border-top: 0px;
     }
 }

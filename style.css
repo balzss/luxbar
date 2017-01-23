@@ -2,25 +2,52 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-color: #ddd;
     color: #212121;
+    margin: 0px;
+    padding: 0px;
     padding-top: 76px;
-    font-weight: 300;
+    /*font-weight: #luxbar-checkbox-demo-1-demo-10;*/
 }
 
 .container {
     max-width: 900px;
     margin: auto;
-}
-
-h1, h2, h3, h4 {
-    font-weight: 300;
-}
-
-h1 {
-    font-size: 2.6em;
+    padding: 12px;
 }
 
 .welcome {
     text-align: center;
-    margin-bottom: 76px;
+    padding: 42px;
+    margin-bottom: 24px;
+    border: 1px solid #212121;
 }
 
+.variable {
+    color: #8b0000;
+}
+
+code pre {
+    font-family: 'Droid Sans Mono', monospace;
+    border-left: 6px solid #333;
+    background-color: #bbb;
+    color: #333;
+    padding: 24px;
+}
+
+.listing > li {
+    padding-top: 6px;
+}
+
+footer {
+    background-color: #212121;
+    color: #aaa;
+    padding: 46px;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 44px;
+}
+
+footer a {
+    color: inherit;
+}
