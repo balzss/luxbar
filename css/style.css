@@ -52,3 +52,92 @@ h2 {
 footer a {
     color: inherit;
 }
+
+.luxbar-demo{
+    align-items: stretch;
+}
+
+.luxbar-item-demo {
+    flex: 1 1 auto;
+    border-width: 0px !important;
+}
+
+.luxbar-menu-demo {
+    margin-bottom: 24px;
+    border: 1px solid currentColor;
+}
+
+.luxbar-menu-demo:hover {
+    padding-left: 76px;
+}
+
+
+
+
+
+.luxbar-hamburger-demo {
+    padding: 26px;
+    position: relative;
+    color: red;
+}
+
+.luxbar-hamburger-demo span::before {
+    margin-top: -8px;
+}
+
+.luxbar-hamburger-demo span::after {
+    margin-top: 8px;
+}
+
+.luxbar-hamburger-demo span::after,
+.luxbar-hamburger-demo span::before {
+    content: '';
+    position: absolute;
+}
+.luxbar-hamburger-demo span::after,
+.luxbar-hamburger-demo span::before,
+.luxbar-hamburger-demo span {
+    display: block;
+    height: 2px;
+    width: 25px;
+    transition: .6s ease-out;
+}
+
+#luxbar-checkbox {
+    display: none;
+}
+
+#luxbar-checkbox:checked ~ .luxbar-menu {
+    height: 100vh;
+    overflow: auto;
+}
+
+#luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger-demo span {
+    background-color: transparent;
+}
+#luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger-demo span::before,
+#luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger-demo span::after {
+    margin-top: 0px;
+}
+
+
+/*hamburger-themes: spin, doublespin*/
+    /*hamburger-spin*/
+
+#luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger-demo-spin span::before {
+    transform: rotate(45deg);
+}
+
+#luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger-demo-spin span::after {
+    transform: rotate(-45deg);
+}
+
+    /*hamburger-spin*/
+
+#luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger-demo-doublespin span::before {
+    transform: rotate(225deg);
+}
+
+#luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger-demo-doublespin span::after {
+    transform: rotate(-225deg);
+}
