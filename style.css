@@ -31,6 +31,7 @@ code pre {
     background-color: #bbb;
     color: #333;
     padding: 24px;
+    overflow: auto;
 }
 
 .listing > li {
