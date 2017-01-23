@@ -159,6 +159,7 @@
 
 .luxbar-hamburger {
     padding: 26px;
+    position: relative;
 }
 
 .luxbar-hamburger span::before {
@@ -189,6 +190,7 @@
 
 #luxbar-checkbox:checked ~ .luxbar-menu {
     height: 100vh;
+    overflow: auto;
 }
 
 #luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger span {
