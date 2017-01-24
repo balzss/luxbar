@@ -67,44 +67,44 @@
 
 .luxbar-menu-light {
     color: #212121;
-    background-color: #ddd;
+    background-color: #eee;
 }
 
 .luxbar-menu-light .luxbar-item:nth-child(2) {
-    border-top: 1px solid #2f2f2f;
+    border-top: 1px solid #212121;
 }
 
 .luxbar-menu-light .active,
 .luxbar-menu-light .luxbar-item:hover {
-    background-color: #ccc;
+    background-color: #e0e0e0;
 }
 
 .luxbar-menu-light .luxbar-hamburger span::after,
 .luxbar-menu-light .luxbar-hamburger span::before,
 .luxbar-menu-light .luxbar-hamburger span {
-    background-color: #2f2f2f;
+    background-color: #212121;
 }
 
     /*luxbar-menu-dark*/
 
 .luxbar-menu-dark {
     background-color: #212121;
-    color: #ddd;
+    color: #fff;
 }
 
 .luxbar-menu-dark .luxbar-item:nth-child(2) {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #212121;
 }
 
 .luxbar-menu-dark .active,
 .luxbar-menu-dark .luxbar-item:hover {
-    background-color: #333;
+    background-color: #424242;
 }
 
 .luxbar-menu-dark .luxbar-hamburger span::after,
 .luxbar-menu-dark .luxbar-hamburger span::before,
 .luxbar-menu-dark .luxbar-hamburger span {
-    background-color: #ddd;
+    background-color: #fff;
 }
 
     /*luxbar-menu-transparent*/

@@ -21,7 +21,7 @@
             <ul class="luxbar-navigation">
                 <li class="luxbar-header">
                     <a class="luxbar-brand">Luxbar Demo</a>
-                    <label id=+luxbar-hamburger" class="luxbar-hamburger luxbar-hamburger-doublespin" for="luxbar-checkbox"> <span></span> </label>
+                    <label id="luxbar-hamburger" class="luxbar-hamburger luxbar-hamburger-doublespin" for="luxbar-checkbox"> <span></span> </label>
                 </li>
                 <li class="luxbar-item active"><a>Home</a></li>
                 <li class="luxbar-item"><a>About</a></li>
@@ -32,9 +32,9 @@
 
 
 
-        <h1>Select the elements you want and use the generated code at the bottom or <a href="/luxbar">go back to the homepage</a>.</h1>
+    <i>This is the LUXBAR interactive demo page. Choose the elements below and you will see the result in this page's navbar. To use the choosen style copy and paste the generated HTML code the bottom of the page or <a href="/luxbar">go back to the homepage</a>.</i>
 
-        <h2>luxbar-style-name</h2>
+        <h2 class="variable">luxbar-style-name</h2>
 
                 <div id="luxbar-style-name" class="luxbar-menu-dark">
                     <ul class="luxbar-navigation luxbar-demo">
@@ -45,7 +45,7 @@
                 </div>
 
 
-        <h2>luxbar-style-name</h2>
+        <h2 class="variable">luxbar-style-name</h2>
         <div class="luxbar-menu-dark luxbar-menu-demo active">
             <ul class="luxbar-navigation luxbar-demo">
                 <li class="luxbar-item luxbar-item-demo"><a class="luxbar-theme-text">Dark</a></li>
@@ -106,40 +106,37 @@
             </ul>
         </div>
 
-        <h2>luxbar-menu-animation-style</h2>
+        <h2 class="variable">luxbar-menu-animation-style</h2>
                     
 
         <div id="luxbar-menu-animation" class="luxbar-menu-dark">
             <ul class="luxbar-navigation luxbar-demo">
-                <li class="luxbar-item luxbar-item-demo luxbar-spin-demo"><a>
+                <li id="luxbar-hamburger-spin" class="luxbar-item luxbar-item-demo luxbar-spin-demo luxbar-animation-demo"><a>
                         <span class="luxbar-hamburger-demo">
                             Spin<span></span>
                         </span></a></li>
-                <li class="luxbar-item luxbar-item-demo luxbar-doublespin-demo active"><a>
+                <li id="luxbar-hamburger-doublespin" class="luxbar-item luxbar-item-demo luxbar-doublespin-demo active luxbar-animation-demo"><a>
                         <span class="luxbar-hamburger-demo">
                             Doublespin<span></span>
                         </span></a></li>
             </ul>
         </div>
 
-        <h2>Generated HTML code</h2>
+        <h2>Generated HTML code:</h2>
         <code>
             <pre>
-&lt;div class=&quot;luxbar <span class="variable">luxbar-style-name</span>&quot;&gt;
+&lt;div class=&quot;luxbar <span class="variable" id="luxbar-style-name-code">luxbar-static</span>&quot;&gt;
     &lt;input type=&quot;checkbox&quot; id=&quot;luxbar-checkbox&quot;&gt;
-    &lt;div class=&quot;luxbar-menu <span class="variable">luxbar-menu-colorscheme</span>&quot;&gt;
+    &lt;div class=&quot;luxbar-menu <span class="variable" id="luxbar-colorscheme-code">luxbar-menu-dark</span>&quot;&gt;
         &lt;ul class=&quot;luxbar-navigation&quot;&gt;
             &lt;li class=&quot;luxbar-header&quot;&gt;
-                &lt;a class=&quot;luxbar-brand&quot; href=&quot;#&quot;&gt;LUXBAR&lt;/a&gt;
-                &lt;label class=&quot;luxbar-hamburger <span class="variable">luxbar-hamburger-animation-style</span>&quot;
+                &lt;a class=&quot;luxbar-brand&quot; href=&quot;#&quot;&gt;Luxbar Demo&lt;/a&gt;
+                &lt;label class=&quot;luxbar-hamburger <span class="variable" id="luxbar-hamburger-animation-code">luxbar-hamburger-doublespin</span>&quot;
                         for=&quot;luxbar-checkbox&quot;&gt; &lt;span&gt;&lt;/span&gt; &lt;/label&gt;
             &lt;/li&gt;
             &lt;li class=&quot;luxbar-item active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-            &lt;li class=&quot;luxbar-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Examples&lt;/a&gt;&lt;/li&gt;
-            &lt;li class=&quot;luxbar-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Docs&lt;/a&gt;&lt;/li&gt;
-            &lt;li class=&quot;luxbar-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;FAQ&lt;/a&gt;&lt;/li&gt;
-            &lt;li class=&quot;luxbar-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Download&lt;/a&gt;&lt;/li&gt;
-            &lt;li class=&quot;luxbar-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Github&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;luxbar-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;luxbar-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
         &lt;/ul&gt;
     &lt;/div&gt;
 &lt;/div&gt;</pre>
@@ -157,7 +154,7 @@
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
 
-    <script >
+    <script>
 $(function() {
     $( ".luxbar-menu-demo" ).click(function() {
         var theme = $(this).attr('class').split(' ')[0];
@@ -168,6 +165,8 @@ $(function() {
 
         $(".luxbar-menu-demo").removeClass("active");
         $(this).addClass("active");
+
+        $("#luxbar-colorscheme-code").text(theme);
     });
 
     $( ".luxbar-style-demo" ).click(function() {
@@ -178,7 +177,30 @@ $(function() {
         } else {
             $(".container").addClass("container-padding-top");
         }
+        $(".luxbar-style-demo").removeClass("active");
+        $(this).addClass("active");
+
+        $("#luxbar-style-name-code").text(style);
     });
+
+    $( ".luxbar-animation-demo" ).click(function() {
+        var animation = $(this).attr('id');
+        console.log(animation);
+        $("#luxbar-hamburger").attr("class", "luxbar-hamburger " + animation);
+        $(".luxbar-animation-demo").removeClass("active");
+        $(this).addClass("active");
+
+        $("#luxbar-hamburger-animation-code").text(animation);
+    });
+
+
+    function copyToClipboard(element) {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($(element).text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+    }
 });
     
     </script>

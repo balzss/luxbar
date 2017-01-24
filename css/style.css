@@ -30,11 +30,11 @@ body {
 
 code pre {
     font-family: 'Droid Sans Mono', monospace;
-    border-left: 6px solid #333;
+    border-left: 6px solid #212121;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
-    background-color: #ddd;
-    color: #333;
+    background-color: #eee;
+    color: #212121;
     padding: 24px;
     overflow: auto;
 }
@@ -44,8 +44,6 @@ code pre {
 }
 
 footer {
-    background-color: #212121;
-    color: #aaa;
     padding: 46px;
     text-align: center;
 }
@@ -80,11 +78,6 @@ footer a {
     border: 1px solid currentColor;
 }
 
-.luxbar-menu-demo:hover,
-.luxbar-menu-demo.active {
-    padding-left: 76px;
-}
-
 .luxbar-menu-demo:hover .luxbar-theme-text::before,
 .luxbar-menu-demo.active .luxbar-theme-text::before {
     content: '>> ';
@@ -115,7 +108,7 @@ footer a {
     height: 2px;
     width: 25px;
     transition: .6s ease-out;
-    background-color: #fff;
+    background-color: currentColor;
 }
 
 
