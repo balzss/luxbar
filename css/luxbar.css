@@ -16,6 +16,7 @@
     position:fixed;
     top: 0;
     left: 0;
+    z-index: 1000;
 }
 
 
@@ -115,6 +116,11 @@
 
 .luxbar-menu-transparent .luxbar-item:nth-child(2) {
     border-top: 1px solid #2f2f2f;
+}
+
+
+.luxbar-menu-transparent {
+    border-bottom: 1px solid #2f2f2f;
 }
 
 .luxbar-menu-transparent .active,

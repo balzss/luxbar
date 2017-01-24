@@ -1,17 +1,20 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #ddd;
+    /* background-color: #ddd; */
+    background-color: white;
     color: #212121;
     margin: 0px;
     padding: 0px;
-    padding-top: 76px;
-    /*font-weight: #luxbar-checkbox-demo-1-demo-10;*/
 }
 
 .container {
     max-width: 900px;
     margin: auto;
     padding: 12px;
+}
+
+.container-padding-top {
+    margin-top: 76px;
 }
 
 .welcome {
@@ -28,7 +31,9 @@ body {
 code pre {
     font-family: 'Droid Sans Mono', monospace;
     border-left: 6px solid #333;
-    background-color: #bbb;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background-color: #ddd;
     color: #333;
     padding: 24px;
     overflow: auto;
@@ -67,20 +72,30 @@ footer a {
     border: 1px solid currentColor;
 }
 
-.luxbar-menu-demo:hover {
+#luxbar-menu-animation {
+    border: 1px solid currentColor;
+}
+
+#luxbar-style-name {
+    border: 1px solid currentColor;
+}
+
+.luxbar-menu-demo:hover,
+.luxbar-menu-demo.active {
     padding-left: 76px;
 }
 
-
-
-
-
-.luxbar-hamburger-demo {
-    padding: 26px;
-    position: relative;
-    color: red;
+.luxbar-menu-demo:hover .luxbar-theme-text::before,
+.luxbar-menu-demo.active .luxbar-theme-text::before {
+    content: '>> ';
 }
 
+.luxbar-hamburger-demo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .luxbar-hamburger-demo span::before {
     margin-top: -8px;
 }
@@ -88,7 +103,6 @@ footer a {
 .luxbar-hamburger-demo span::after {
     margin-top: 8px;
 }
-
 .luxbar-hamburger-demo span::after,
 .luxbar-hamburger-demo span::before {
     content: '';
@@ -101,43 +115,36 @@ footer a {
     height: 2px;
     width: 25px;
     transition: .6s ease-out;
+    background-color: #fff;
 }
 
-#luxbar-checkbox {
-    display: none;
-}
 
-#luxbar-checkbox:checked ~ .luxbar-menu {
-    height: 100vh;
-    overflow: auto;
-}
 
-#luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger-demo span {
-    background-color: transparent;
-}
-#luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger-demo span::before,
-#luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger-demo span::after {
+.luxbar-doublespin-demo:hover span::before {
+    transform: rotate(225deg);
     margin-top: 0px;
 }
 
-
-/*hamburger-themes: spin, doublespin*/
-    /*hamburger-spin*/
-
-#luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger-demo-spin span::before {
-    transform: rotate(45deg);
-}
-
-#luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger-demo-spin span::after {
-    transform: rotate(-45deg);
-}
-
-    /*hamburger-spin*/
-
-#luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger-demo-doublespin span::before {
-    transform: rotate(225deg);
-}
-
-#luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger-demo-doublespin span::after {
+.luxbar-doublespin-demo:hover span::after {
     transform: rotate(-225deg);
+    margin-top: 0px;
+}
+
+.luxbar-doublespin-demo:hover span {
+    background: transparent;
+}
+
+
+.luxbar-spin-demo:hover span::before {
+    transform: rotate(45deg);
+    margin-top: 0px;
+}
+
+.luxbar-spin-demo:hover span::after {
+    transform: rotate(-45deg);
+    margin-top: 0px;
+}
+
+.luxbar-spin-demo:hover span {
+    background: transparent;
 }

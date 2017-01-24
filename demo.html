@@ -14,18 +14,18 @@
 </head>
 <body>
 
-<div class="container">
-    <div class="luxbar luxbar-static">
+<div class="container container-padding-top">
+    <div id="luxbar" class="luxbar luxbar-static">
         <input type="checkbox" id="luxbar-checkbox">
-        <div class="luxbar-menu luxbar-menu-dark">
+        <div id="luxbar-menu" class="luxbar-menu luxbar-menu-dark">
             <ul class="luxbar-navigation">
                 <li class="luxbar-header">
-                    <a class="luxbar-brand" href="#">Luxbar Demo</a>
-                    <label class="luxbar-hamburger luxbar-hamburger-doublespin" for="luxbar-checkbox"> <span></span> </label>
+                    <a class="luxbar-brand">Luxbar Demo</a>
+                    <label id=+luxbar-hamburger" class="luxbar-hamburger luxbar-hamburger-doublespin" for="luxbar-checkbox"> <span></span> </label>
                 </li>
-                <li class="luxbar-item active"><a href="#">Home</a></li>
-                <li class="luxbar-item"><a href="#">About</a></li>
-                <li class="luxbar-item"><a href="#">Contact</a></li>
+                <li class="luxbar-item active"><a>Home</a></li>
+                <li class="luxbar-item"><a>About</a></li>
+                <li class="luxbar-item"><a>Contact</a></li>
             </ul>
         </div>
     </div>
@@ -36,84 +36,89 @@
 
         <h2>luxbar-style-name</h2>
 
-                <div class="luxbar-menu-dark">
+                <div id="luxbar-style-name" class="luxbar-menu-dark">
                     <ul class="luxbar-navigation luxbar-demo">
-                        <li class="luxbar-item luxbar-item-demo"><a href="#">Default</a></li>
-                        <li class="luxbar-item luxbar-item-demo active"><a href="#">Static</a></li>
-                        <li class="luxbar-item luxbar-item-demo"><a href="#">Fixed</a></li>
+                        <li class="luxbar-item luxbar-item-demo luxbar-style-demo" id="luxbar-default"><a>Default</a></li>
+                        <li class="luxbar-item luxbar-item-demo luxbar-style-demo active" id="luxbar-static"><a>Static</a></li>
+                        <li class="luxbar-item luxbar-item-demo luxbar-style-demo" id="luxbar-fixed"><a>Fixed</a></li>
                     </ul>
                 </div>
 
 
         <h2>luxbar-style-name</h2>
-        <div class="luxbar-menu-dark luxbar-menu-demo">
+        <div class="luxbar-menu-dark luxbar-menu-demo active">
             <ul class="luxbar-navigation luxbar-demo">
-                <li class="luxbar-item luxbar-item-demo"><a href="#">Dark</a></li>
+                <li class="luxbar-item luxbar-item-demo"><a class="luxbar-theme-text">Dark</a></li>
             </ul>
         </div>
 
         <div class="luxbar-menu-light luxbar-menu-demo">
             <ul class="luxbar-navigation luxbar-demo">
-                <li class="luxbar-item luxbar-item-demo"><a href="#">Light</a></li>
+                <li class="luxbar-item luxbar-item-demo"><a class="luxbar-theme-text">Light</a></li>
             </ul>
         </div>
 
         <div class="luxbar-menu-transparent luxbar-menu-demo">
             <ul class="luxbar-navigation luxbar-demo">
-                <li class="luxbar-item luxbar-item-demo"><a href="#">Transparent</a></li>
+                <li class="luxbar-item luxbar-item-demo"><a class="luxbar-theme-text">Transparent</a></li>
             </ul>
         </div>
 
         <div class="luxbar-menu-material-red luxbar-menu-demo">
             <ul class="luxbar-navigation luxbar-demo">
-                <li class="luxbar-item luxbar-item-demo"><a href="#">Material Red</a></li>
+                <li class="luxbar-item luxbar-item-demo"><a class="luxbar-theme-text">Material Red</a></li>
             </ul>
         </div>
 
         <div class="luxbar-menu-material-indigo luxbar-menu-demo">
             <ul class="luxbar-navigation luxbar-demo">
-                <li class="luxbar-item luxbar-item-demo"><a href="#">Material Indigo</a></li>
+                <li class="luxbar-item luxbar-item-demo"><a class="luxbar-theme-text">Material Indigo</a></li>
             </ul>
         </div>
 
         <div class="luxbar-menu-material-cyan luxbar-menu-demo">
             <ul class="luxbar-navigation luxbar-demo">
-                <li class="luxbar-item luxbar-item-demo"><a href="#">Material Cyan</a></li>
+                <li class="luxbar-item luxbar-item-demo"><a class="luxbar-theme-text">Material Cyan</a></li>
             </ul>
         </div>
 
         <div class="luxbar-menu-material-green luxbar-menu-demo">
             <ul class="luxbar-navigation luxbar-demo">
-                <li class="luxbar-item luxbar-item-demo"><a href="#">Material Green</a></li>
+                <li class="luxbar-item luxbar-item-demo"><a class="luxbar-theme-text">Material Green</a></li>
             </ul>
         </div>
 
         <div class="luxbar-menu-material-amber luxbar-menu-demo">
             <ul class="luxbar-navigation luxbar-demo">
-                <li class="luxbar-item luxbar-item-demo"><a href="#">Material Amber</a></li>
+                <li class="luxbar-item luxbar-item-demo"><a class="luxbar-theme-text">Material Amber</a></li>
             </ul>
         </div>
 
         <div class="luxbar-menu-material-brown luxbar-menu-demo">
             <ul class="luxbar-navigation luxbar-demo">
-                <li class="luxbar-item luxbar-item-demo"><a href="#">Material Brown</a></li>
+                <li class="luxbar-item luxbar-item-demo"><a class="luxbar-theme-text">Material Brown</a></li>
             </ul>
         </div>
 
         <div class="luxbar-menu-material-bluegrey luxbar-menu-demo">
             <ul class="luxbar-navigation luxbar-demo">
-                <li class="luxbar-item luxbar-item-demo"><a href="#">Material Blue Grey</a></li>
+                <li class="luxbar-item luxbar-item-demo"><a class="luxbar-theme-text">Material Blue Grey</a></li>
             </ul>
         </div>
 
         <h2>luxbar-menu-animation-style</h2>
+                    
 
-        <div class="luxbar-menu-dark">
+        <div id="luxbar-menu-animation" class="luxbar-menu-dark">
             <ul class="luxbar-navigation luxbar-demo">
-                <li class="luxbar-hamburger-demo"><a href="#">
-                    Spin
-                </a></li>
-                <li class="luxbar-item luxbar-item-demo active"><a href="#">Doublespin</a></li>
+                <li class="luxbar-item luxbar-item-demo luxbar-spin-demo"><a>
+                        <span class="luxbar-hamburger-demo">
+                            Spin<span></span>
+                        </span></a></li>
+                <li class="luxbar-item luxbar-item-demo luxbar-doublespin-demo active"><a>
+                        <span class="luxbar-hamburger-demo">
+                            Doublespin<span></span>
+                        </span></a></li>
             </ul>
         </div>
 
@@ -141,10 +146,41 @@
         </code>
     </div>
 
-    <footer>
-        created by <a href="#">balzss</a> and licensed under the <a href="#">MIT License</a> ● 2017
+    <footer class="luxbar-menu-dark">
+        created by <a href="#">balzss</a> <br>
+        licensed under the <a href="#">MIT License</a> <br>
+        2017
     </footer>
 
 
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+
+    <script >
+$(function() {
+    $( ".luxbar-menu-demo" ).click(function() {
+        var theme = $(this).attr('class').split(' ')[0];
+        $("#luxbar-menu").attr("class", "luxbar-menu " + theme);
+        $("footer").attr("class", theme);
+        $("#luxbar-style-name").attr("class", theme);
+        $("#luxbar-menu-animation").attr("class", theme);
+
+        $(".luxbar-menu-demo").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    $( ".luxbar-style-demo" ).click(function() {
+        var style = $(this).attr('id');
+        $("#luxbar").attr("class", "luxbar " + style);
+        if(style === "luxbar-default") {
+            $(".container").removeClass("container-padding-top");
+        } else {
+            $(".container").addClass("container-padding-top");
+        }
+    });
+});
+    
+    </script>
 </body>
 </html>
