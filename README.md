@@ -27,7 +27,7 @@ Then use the HTML code either from the [interactive demo page](https://balzss.gi
 ```html
 <div class="luxbar luxbar-style-name">
     <input type="checkbox" id="luxbar-checkbox">
-    <div class="luxbar-menu luxbar-menu-colorscheme">
+    <div class="luxbar-menu **luxbar-menu-colorscheme**">
         <ul class="luxbar-navigation">
             <li class="luxbar-header">
                 <a class="luxbar-brand" href="#">LUXBAR</a>
