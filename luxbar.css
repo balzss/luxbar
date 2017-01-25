@@ -54,6 +54,7 @@
 .luxbar-item a {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
 .luxbar-item a {
