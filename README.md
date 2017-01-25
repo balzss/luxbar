@@ -16,7 +16,7 @@ bower install luxbar
 
 Or use CDN:
 ```html
-<link rel="stylesheet" href="luxbar.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/luxbar/0.1.0/luxbar.min.css">
 ```
 
 [Or download the source
