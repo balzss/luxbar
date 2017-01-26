@@ -16,22 +16,22 @@ bower install luxbar
 
 Or use CDN:
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/luxbar/0.1.0/luxbar.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/luxbar/0.1.0/luxbar.css">
 ```
 
 [Or download the source
 directly](https://github.com/balzss/luxbar/archive/0.1.0.zip)
 
-Then use the HTML code either from the [interactive demo page](https://balzss.github.io/luxbar/demo) or from below (the **bold** class names are cutomizable, and you have to replace them with one of the options listed in the customization section):
+Then use the HTML code either from the [interactive demo page](https://balzss.github.io/luxbar/demo) or from below (the CLASS NAMES IN CAPS are customizable, and you have to replace them with one of the options listed in the customization section):
 
 ```html
-<div class="luxbar luxbar-style-name">
+<div class="luxbar LUXBAR-STYLE-NAME">
     <input type="checkbox" id="luxbar-checkbox">
-    <div class="luxbar-menu **luxbar-menu-colorscheme**">
+    <div class="luxbar-menu LUXBAR-MENU-COLORSCHEME">
         <ul class="luxbar-navigation">
             <li class="luxbar-header">
-                <a class="luxbar-brand" href="#">LUXBAR</a>
-                <label class="luxbar-hamburger luxbar-hamburger-animation-style"
+                <a class="luxbar-brand" href="#">Brand</a>
+                <label class="luxbar-hamburger LUXBAR-ANIMATION-STYLE"
                         for="luxbar-checkbox"> <span></span> </label>
             </li>
             <li class="luxbar-item active"><a href="#">Home</a></li>
@@ -68,8 +68,40 @@ Then use the HTML code either from the [interactive demo page](https://balzss.gi
 **luxbar-hamburger-spin**: the top and bottom parts of the hamburger icon rotates 45 degrees to form an X  
 **luxbar-hamburger-doublespin**: the top and bottom parts of the hamburger icon rotates 225 degrees to form an X  
 
-# Other:
+# FAQ
 
- - If you find any bug please report it
-   [here](https://github.com/balzss/luxbar/issues)
- - For contribution guidelines, future plans and other information please check out the [FAQ](https://balzss.github.io/luxbar/faq)
+### Who is this intended for?
+
+For everyone who wants a responsive navigation bar that looks good on every screensize, lightweight and easy to implement.
+
+### Why should I use this instead of existing solutions (e.g. Bootstrap's navbar)?
+
+Existing "premade" navbars are usually packed with a full blown CSS framework and lies heavily on JS. If you already using Bootstrap for your site maybe it not worth it but I would still recommend giving it a try for the fancy colors and animations.
+
+### How light it is actually?
+
+The origial CSS file is about 9KB, the minified is about 7KB and the minified version gzipped is about only 1KB
+
+### What are the future plans/TODO?
+
+Add more themes and animations
+Add options to use the hamburger menu on every screensize
+Add alignment options
+Add dropdown menus
+Add support for opening sideways
+
+### How can I contribute to this project?
+
+Pick a bug from here or a feature from the TODO list and let me know that you want to work on that at balazs.saros@gmail.com
+
+### I found a bug, what should I do?
+
+Please report it here
+
+### Can I use it in a closed source project?
+
+It is licensed under the MIT license, you can use it anywhere you want.
+
+### Are these quiestion has really been asked frequently?
+
+No, I just found this format a good way to give general information :)
