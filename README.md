@@ -16,11 +16,11 @@ bower install luxbar
 
 Or use CDN:
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/luxbar/0.1.0/luxbar.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/luxbar/0.1.2/luxbar.css">
 ```
 
 [Or download the source
-directly](https://github.com/balzss/luxbar/archive/0.1.0.zip)
+directly](https://github.com/balzss/luxbar/archive/0.1.2.zip)
 
 Then use the HTML code either from the [interactive demo page](https://balzss.github.io/luxbar/demo) or from below (the CLASS-NAMES-IN-CAPS are customizable, and you have to replace them with one of the options listed in the customization section):
 
