@@ -4,7 +4,7 @@ Featherweight, Responsive, CSS Only Navigation bar
 
 ![Screencap](http://i.imgur.com/bJ6Ty8B.gif)
 
-[try it out at the demo page](https://balzss.github.io/luxbar/demo)
+[Try it out at the demo page](https://balzss.github.io/luxbar/demo)
 
 # Getting started
 
@@ -22,7 +22,7 @@ Or use CDN:
 [Or download the source
 directly](https://github.com/balzss/luxbar/archive/0.1.0.zip)
 
-Then use the HTML code either from the [interactive demo page](https://balzss.github.io/luxbar/demo) or from below (the CLASS NAMES IN CAPS are customizable, and you have to replace them with one of the options listed in the customization section):
+Then use the HTML code either from the [interactive demo page](https://balzss.github.io/luxbar/demo) or from below (the CLASS-NAMES-IN-CAPS are customizable, and you have to replace them with one of the options listed in the customization section):
 
 ```html
 <div class="luxbar LUXBAR-STYLE-NAME">
@@ -76,32 +76,32 @@ For everyone who wants a responsive navigation bar that looks good on every scre
 
 ### Why should I use this instead of existing solutions (e.g. Bootstrap's navbar)?
 
-Existing "premade" navbars are usually packed with a full blown CSS framework and lies heavily on JS. If you already using Bootstrap for your site maybe it not worth it but I would still recommend giving it a try for the fancy colors and animations.
+Existing "premade" navbars are usually packed with a full blown CSS framework and rely heavily on JS. If you are already using Bootstrap for your site maybe it's not worth it but I would still recommend giving it a try for the fancy colors and animations.
 
 ### How light it is actually?
 
-The origial CSS file is about 9KB, the minified is about 7KB and the minified version gzipped is about only 1KB
+The original CSS file is about 9KB, the minified is about 7KB and the minified version gzipped is about only 1KB.
 
 ### What are the future plans/TODO?
 
-Add more themes and animations
-Add options to use the hamburger menu on every screensize
-Add alignment options
-Add dropdown menus
-Add support for opening sideways
+- Add more themes and animations
+- Add options to use the hamburger menu on every screensize
+- Add alignment options
+- Add dropdown menus
+- Add support for opening sideways
 
 ### How can I contribute to this project?
 
-Pick a bug from here or a feature from the TODO list and let me know that you want to work on that at balazs.saros@gmail.com
+Pick a bug from [here](https://github.com/balzss/luxbar/issues) or a feature from the TODO list above and let me know that you want to work on that at [balazs.saros@gmail.com](mailto:balazs.saros@gmail.com)
 
 ### I found a bug, what should I do?
 
-Please report it here
+Please report it [here](https://github.com/balzss/luxbar/issues).
 
 ### Can I use it in a closed source project?
 
 It is licensed under the MIT license, you can use it anywhere you want.
 
-### Are these quiestion has really been asked frequently?
+### Have these questions really been asked frequently?
 
 No, I just found this format a good way to give general information :)
