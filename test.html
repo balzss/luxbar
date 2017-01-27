@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luxbar test page</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
+    <link rel="stylesheet" href="luxbar.css">
+
+    <style>
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    color: #212121;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 12px;
+}
+
+.container-padding-top {
+    margin-top: 72px;
+}
+    </style>
+</head>
+<body>
+
+
+    <div class="luxbar luxbar-static">
+        <input type="checkbox" id="luxbar-checkbox">
+        <div class="luxbar-menu luxbar-menu-material-cyan"">
+            <ul class="luxbar-navigation">
+                <li class="luxbar-header">
+                    <a class="luxbar-brand" href="#">LUXBAR</a>
+                    <label class="luxbar-hamburger luxbar-hamburger-doublespin" for="luxbar-checkbox"> <span></span> </label>
+                </li>
+                <li class="luxbar-item"><a href="#">Home</a></li>
+                <li class="luxbar-item"><a href="#">Demo</a></li>
+                <li class="luxbar-item active"><a href="#">FAQ</a></li>
+                <li class="luxbar-item"><a href="#">Download</a></li>
+                <li class="luxbar-item"><a href="#">Github</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container container-padding-top">
+
+        <h1>FAQ:</h1>
+
+        <h2>Who is this intended for?</h2>
+        <p>For everyone who wants a responsive navigation bar that looks good on every screensize, lightweight and easy to implement.</p>
+
+        <h2>Why should I use this instead of existing solutions (e.g. Bootstrap's navbar)?</h2>
+        <p>Existing "premade" navbars are usually packed with a full blown CSS framework and rely heavily on JS. If you are already using Bootstrap for your site maybe it's not worth it but I would still recommend giving it a try for the fancy colors and animations.</p>
+
+        <h2>How light it is actually?</h2>
+        <p>The origial CSS file is about 9KB, the minified is about 7KB and the minified version gzipped is about only 1KB.</p>
+
+        <h2>What are the future plans/TODO?</h2>
+        <ul>
+            <li>Add more themes and animations</li>
+            <li>Add options to use the hamburger menu on every screensize</li>
+            <li>Add alignment options</li>
+            <li>Add dropdown menus</li>
+            <li>Add support for opening sideways</li>
+        </ul>
+
+        <h2>How can I contribute to this project?</h2>
+        <p>Pick a bug from <a href="https://github.com/balzss/luxbar/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20">here</a> or a feature from the TODO list and let me know that you want to work on that at <a href="mailto:balazs.saros@gmail.com">balazs.saros@gmail.com</a></p>
+
+        <h2>I found a bug, what should I do?</h2>
+        <p>Please report it <a href="https://github.com/balzss/luxbar/issues">here</a></p>
+
+        <h2>Can I use it in a closed source project?</h2>
+        <p>It is licensed under the MIT license, you can use it anywhere you want.</p>
+
+        <h2>Have these questions really been asked frequently</h2>
+        <p>No, I just found this format a good way to give general information :)</p>
+
+    </div>
+
+</body>
+</html>
