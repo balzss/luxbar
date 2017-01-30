@@ -31,7 +31,7 @@
 
 .luxbar-menu {
   height: 72px;
-  overflow: hidden;
+  overflow: hidden;  
   transition: 0.6s ease;
   width: 100%; }
 
@@ -185,8 +185,7 @@
 #luxbar-checkbox {
   display: none; }
   #luxbar-checkbox:checked ~ .luxbar-menu {
-    height: 100vh;
-    overflow: auto; }
+    height: 100vh; }
     #luxbar-checkbox:checked ~ .luxbar-menu li {
       /*hamburger-spin*/
       /*hamburger-spin*/ }
