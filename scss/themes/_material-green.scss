@@ -4,17 +4,17 @@ $material-green-bg: #1b5e20;
 $material-green-hl: #2e7d32;
 $material-green-fg: $default-fg;
 
-%bg-and-fg {
+%bg-and-fg-green {
     background-color: $material-green-bg;
     color: $material-green-fg;
 }
 
 .luxbar-menu-material-green {
-    @extend %bg-and-fg;
+    @extend %bg-and-fg-green;
 
     .dropdown {
         ul {
-            @extend %bg-and-fg;
+            @extend %bg-and-fg-green;
         }
     }
 

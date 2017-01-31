@@ -4,17 +4,17 @@ $material-bluegrey-bg: #263238;
 $material-bluegrey-hl: #37474f;
 $material-bluegrey-fg: $default-fg;
 
-%bg-and-fg {
+%bg-and-fg-bluegrey {
     background-color: $material-bluegrey-bg;
     color: $material-bluegrey-fg;
 }
 
 .luxbar-menu-material-bluegrey {
-    @extend %bg-and-fg;
+    @extend %bg-and-fg-bluegrey;
 
     .dropdown {
         ul {
-            @extend %bg-and-fg;
+            @extend %bg-and-fg-bluegrey;
         }
     }
 

@@ -4,17 +4,17 @@ $material-amber-bg: #ff6f00;
 $material-amber-hl: #ff8f00;
 $material-amber-fg: $default-fg;
 
-%bg-and-fg {
+%bg-and-fg-amber {
     background-color: $material-amber-bg;
     color: $material-amber-fg;
 }
 
 .luxbar-menu-material-amber {
-    @extend %bg-and-fg;
+    @extend %bg-and-fg-amber;
 
     .dropdown {
         ul {
-            @extend %bg-and-fg;
+            @extend %bg-and-fg-amber;
         }
     }
 

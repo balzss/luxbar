@@ -4,17 +4,17 @@ $dark-bg: #212121;
 $dark-hl: #424242;
 $dark-fg: $default-fg;
 
-%bg-and-fg {
+%bg-and-fg-dark {
     background-color: $dark-bg;
     color: $dark-fg;
 }
 
 .luxbar-menu-dark {
-    @extend %bg-and-fg;
+    @extend %bg-and-fg-dark;
 
     .dropdown {
         ul {
-            @extend %bg-and-fg;
+            @extend %bg-and-fg-dark;
         }
     }
 

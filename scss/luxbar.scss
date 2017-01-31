@@ -1,5 +1,23 @@
 @import 'global-variables';
 
+%general-hamburger-span {
+    display: block;
+    height: $hamburger-line-height;
+    width: $hamburger-width;
+    transition: $luxbar-transition;
+}
+
+%hamburger-lines {
+    span {
+        background-color: transparent;
+
+        &::before,
+        &::after {
+            margin-top: 0;
+        }
+    }
+}
+
 .luxbar-default {
     width: 100%;
     position: relative;
@@ -66,13 +84,6 @@
     }
 }
 
-%general-hamburger-span {
-    display: block;
-    height: $hamburger-line-height;
-    width: $hamburger-width;
-    transition: $luxbar-transition;
-}
-
 .luxbar-hamburger {
     padding: $luxbar-padding;
     position: relative;
@@ -94,17 +105,6 @@
 
         &::after {
             margin-top: 8px;
-        }
-    }
-}
-
-%hamburger-lines {
-    span {
-        background-color: transparent;
-
-        &::before,
-        &::after {
-            margin-top: 0;
         }
     }
 }

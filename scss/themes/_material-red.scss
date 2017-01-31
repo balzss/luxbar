@@ -4,17 +4,17 @@ $material-red-bg: #b71c1c;
 $material-red-hl: #c62828;
 $material-red-fg: $default-fg;
 
-%bg-and-fg {
+%bg-and-fg-red {
     background-color: $material-red-bg;
     color: $material-red-fg;
 }
 
 .luxbar-menu-material-red {
-    @extend %bg-and-fg;
+    @extend %bg-and-fg-red;
 
     .dropdown {
         ul {
-            @extend %bg-and-fg;
+            @extend %bg-and-fg-red;
         }
     }
 

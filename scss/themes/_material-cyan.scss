@@ -4,17 +4,17 @@ $material-cyan-bg: #006064;
 $material-cyan-hl: #00838f;
 $material-cyan-fg: $default-fg;
 
-%bg-and-fg {
+%bg-and-fg-cyan {
     background-color: $material-cyan-bg;
     color: $material-cyan-fg;
 }
 
 .luxbar-menu-material-cyan {
-    @extend %bg-and-fg;
+    @extend %bg-and-fg-cyan;
 
     .dropdown {
         ul {
-            @extend %bg-and-fg;
+            @extend %bg-and-fg-cyan;
         }
     }
 

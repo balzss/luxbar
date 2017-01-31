@@ -4,17 +4,17 @@ $material-indigo-bg: #1a237e;
 $material-indigo-hl: #283593;
 $material-indigo-fg: $default-fg;
 
-%bg-and-fg {
+%bg-and-fg-indigo {
     background-color: $material-indigo-bg;
     color: $material-indigo-fg;
 }
 
 .luxbar-menu-material-indigo {
-    @extend %bg-and-fg;
+    @extend %bg-and-fg-indigo;
 
     .dropdown {
         ul {
-            @extend %bg-and-fg;
+            @extend %bg-and-fg-indigo;
         }
     }
 

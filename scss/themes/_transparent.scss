@@ -1,17 +1,17 @@
 $transparent-bg: inherit;
 $transparent-fg: #212121;
 
-%bg-and-fg {
+%bg-and-fg-transparent {
     background-color: $transparent-bg;
     color: $transparent-fg;
 }
 
 .luxbar-menu-transparent {
-    @extend %bg-and-fg;
+    @extend %bg-and-fg-transparent;
 
     .dropdown {
         ul {
-            @extend %bg-and-fg;
+            @extend %bg-and-fg-transparent;
         }
     }
 

@@ -1,3 +1,15 @@
+.luxbar-hamburger span, .luxbar-hamburger span::before, .luxbar-hamburger span::after {
+  display: block;
+  height: 2px;
+  width: 26px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease; }
+
+.luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger span {
+  background-color: transparent; }
+  .luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger span::before, .luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger span::after {
+    margin-top: 0; }
+
 .luxbar-default {
   width: 100%;
   position: relative; }
@@ -66,13 +78,6 @@
     padding: 24px;
     display: block; }
 
-.luxbar-hamburger span, .luxbar-hamburger span::before, .luxbar-hamburger span::after {
-  display: block;
-  height: 2px;
-  width: 26px;
-  -webkit-transition: 0.6s ease;
-  transition: 0.6s ease; }
-
 .luxbar-hamburger {
   padding: 24px;
   position: relative;
@@ -84,11 +89,6 @@
     margin-top: -8px; }
   .luxbar-hamburger span::after {
     margin-top: 8px; }
-
-.luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger span {
-  background-color: transparent; }
-  .luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger span::before, .luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger span::after {
-    margin-top: 0; }
 
 .luxbar-checkbox {
   display: none; }
@@ -172,7 +172,7 @@
         .dropdown > ul .luxbar-item a {
           white-space: nowrap; } }
 
-.luxbar-menu-light, .luxbar-menu-light .dropdown ul, .luxbar-menu-dark, .luxbar-menu-dark .dropdown ul, .luxbar-menu-transparent, .luxbar-menu-transparent .dropdown ul, .luxbar-menu-material-red, .luxbar-menu-material-red .dropdown ul, .luxbar-menu-material-indigo, .luxbar-menu-material-indigo .dropdown ul, .luxbar-menu-material-cyan, .luxbar-menu-material-cyan .dropdown ul, .luxbar-menu-material-green, .luxbar-menu-material-green .dropdown ul, .luxbar-menu-material-amber, .luxbar-menu-material-amber .dropdown ul, .luxbar-menu-material-brown, .luxbar-menu-material-brown .dropdown ul, .luxbar-menu-material-bluegrey, .luxbar-menu-material-bluegrey .dropdown ul {
+.luxbar-menu-light, .luxbar-menu-light .dropdown ul {
   background-color: #e0e0e0;
   color: #212121; }
 
@@ -187,7 +187,7 @@
   .luxbar-menu-light .luxbar-hamburger span::before, .luxbar-menu-light .luxbar-hamburger span::after {
     background-color: #212121; }
 
-.luxbar-menu-light, .luxbar-menu-light .dropdown ul, .luxbar-menu-dark, .luxbar-menu-dark .dropdown ul, .luxbar-menu-transparent, .luxbar-menu-transparent .dropdown ul, .luxbar-menu-material-red, .luxbar-menu-material-red .dropdown ul, .luxbar-menu-material-indigo, .luxbar-menu-material-indigo .dropdown ul, .luxbar-menu-material-cyan, .luxbar-menu-material-cyan .dropdown ul, .luxbar-menu-material-green, .luxbar-menu-material-green .dropdown ul, .luxbar-menu-material-amber, .luxbar-menu-material-amber .dropdown ul, .luxbar-menu-material-brown, .luxbar-menu-material-brown .dropdown ul, .luxbar-menu-material-bluegrey, .luxbar-menu-material-bluegrey .dropdown ul {
+.luxbar-menu-dark, .luxbar-menu-dark .dropdown ul {
   background-color: #212121;
   color: #fff; }
 
@@ -202,7 +202,7 @@
   .luxbar-menu-dark .luxbar-hamburger span::before, .luxbar-menu-dark .luxbar-hamburger span::after {
     background-color: #fff; }
 
-.luxbar-menu-light, .luxbar-menu-light .dropdown ul, .luxbar-menu-dark, .luxbar-menu-dark .dropdown ul, .luxbar-menu-transparent, .luxbar-menu-transparent .dropdown ul, .luxbar-menu-material-red, .luxbar-menu-material-red .dropdown ul, .luxbar-menu-material-indigo, .luxbar-menu-material-indigo .dropdown ul, .luxbar-menu-material-cyan, .luxbar-menu-material-cyan .dropdown ul, .luxbar-menu-material-green, .luxbar-menu-material-green .dropdown ul, .luxbar-menu-material-amber, .luxbar-menu-material-amber .dropdown ul, .luxbar-menu-material-brown, .luxbar-menu-material-brown .dropdown ul, .luxbar-menu-material-bluegrey, .luxbar-menu-material-bluegrey .dropdown ul {
+.luxbar-menu-transparent, .luxbar-menu-transparent .dropdown ul {
   background-color: inherit;
   color: #212121; }
 
@@ -217,7 +217,7 @@
   .luxbar-menu-transparent .luxbar-hamburger span::before, .luxbar-menu-transparent .luxbar-hamburger span::after {
     background-color: #212121; }
 
-.luxbar-menu-light, .luxbar-menu-light .dropdown ul, .luxbar-menu-dark, .luxbar-menu-dark .dropdown ul, .luxbar-menu-transparent, .luxbar-menu-transparent .dropdown ul, .luxbar-menu-material-red, .luxbar-menu-material-red .dropdown ul, .luxbar-menu-material-indigo, .luxbar-menu-material-indigo .dropdown ul, .luxbar-menu-material-cyan, .luxbar-menu-material-cyan .dropdown ul, .luxbar-menu-material-green, .luxbar-menu-material-green .dropdown ul, .luxbar-menu-material-amber, .luxbar-menu-material-amber .dropdown ul, .luxbar-menu-material-brown, .luxbar-menu-material-brown .dropdown ul, .luxbar-menu-material-bluegrey, .luxbar-menu-material-bluegrey .dropdown ul {
+.luxbar-menu-material-red, .luxbar-menu-material-red .dropdown ul {
   background-color: #b71c1c;
   color: #fff; }
 
@@ -232,7 +232,7 @@
   .luxbar-menu-material-red .luxbar-hamburger span::before, .luxbar-menu-material-red .luxbar-hamburger span::after {
     background-color: #fff; }
 
-.luxbar-menu-light, .luxbar-menu-light .dropdown ul, .luxbar-menu-dark, .luxbar-menu-dark .dropdown ul, .luxbar-menu-transparent, .luxbar-menu-transparent .dropdown ul, .luxbar-menu-material-red, .luxbar-menu-material-red .dropdown ul, .luxbar-menu-material-indigo, .luxbar-menu-material-indigo .dropdown ul, .luxbar-menu-material-cyan, .luxbar-menu-material-cyan .dropdown ul, .luxbar-menu-material-green, .luxbar-menu-material-green .dropdown ul, .luxbar-menu-material-amber, .luxbar-menu-material-amber .dropdown ul, .luxbar-menu-material-brown, .luxbar-menu-material-brown .dropdown ul, .luxbar-menu-material-bluegrey, .luxbar-menu-material-bluegrey .dropdown ul {
+.luxbar-menu-material-indigo, .luxbar-menu-material-indigo .dropdown ul {
   background-color: #1a237e;
   color: #fff; }
 
@@ -247,7 +247,7 @@
   .luxbar-menu-material-indigo .luxbar-hamburger span::before, .luxbar-menu-material-indigo .luxbar-hamburger span::after {
     background-color: #fff; }
 
-.luxbar-menu-light, .luxbar-menu-light .dropdown ul, .luxbar-menu-dark, .luxbar-menu-dark .dropdown ul, .luxbar-menu-transparent, .luxbar-menu-transparent .dropdown ul, .luxbar-menu-material-red, .luxbar-menu-material-red .dropdown ul, .luxbar-menu-material-indigo, .luxbar-menu-material-indigo .dropdown ul, .luxbar-menu-material-cyan, .luxbar-menu-material-cyan .dropdown ul, .luxbar-menu-material-green, .luxbar-menu-material-green .dropdown ul, .luxbar-menu-material-amber, .luxbar-menu-material-amber .dropdown ul, .luxbar-menu-material-brown, .luxbar-menu-material-brown .dropdown ul, .luxbar-menu-material-bluegrey, .luxbar-menu-material-bluegrey .dropdown ul {
+.luxbar-menu-material-cyan, .luxbar-menu-material-cyan .dropdown ul {
   background-color: #006064;
   color: #fff; }
 
@@ -262,7 +262,7 @@
   .luxbar-menu-material-cyan .luxbar-hamburger span::before, .luxbar-menu-material-cyan .luxbar-hamburger span::after {
     background-color: #fff; }
 
-.luxbar-menu-light, .luxbar-menu-light .dropdown ul, .luxbar-menu-dark, .luxbar-menu-dark .dropdown ul, .luxbar-menu-transparent, .luxbar-menu-transparent .dropdown ul, .luxbar-menu-material-red, .luxbar-menu-material-red .dropdown ul, .luxbar-menu-material-indigo, .luxbar-menu-material-indigo .dropdown ul, .luxbar-menu-material-cyan, .luxbar-menu-material-cyan .dropdown ul, .luxbar-menu-material-green, .luxbar-menu-material-green .dropdown ul, .luxbar-menu-material-amber, .luxbar-menu-material-amber .dropdown ul, .luxbar-menu-material-brown, .luxbar-menu-material-brown .dropdown ul, .luxbar-menu-material-bluegrey, .luxbar-menu-material-bluegrey .dropdown ul {
+.luxbar-menu-material-green, .luxbar-menu-material-green .dropdown ul {
   background-color: #1b5e20;
   color: #fff; }
 
@@ -277,7 +277,7 @@
   .luxbar-menu-material-green .luxbar-hamburger span::before, .luxbar-menu-material-green .luxbar-hamburger span::after {
     background-color: #fff; }
 
-.luxbar-menu-light, .luxbar-menu-light .dropdown ul, .luxbar-menu-dark, .luxbar-menu-dark .dropdown ul, .luxbar-menu-transparent, .luxbar-menu-transparent .dropdown ul, .luxbar-menu-material-red, .luxbar-menu-material-red .dropdown ul, .luxbar-menu-material-indigo, .luxbar-menu-material-indigo .dropdown ul, .luxbar-menu-material-cyan, .luxbar-menu-material-cyan .dropdown ul, .luxbar-menu-material-green, .luxbar-menu-material-green .dropdown ul, .luxbar-menu-material-amber, .luxbar-menu-material-amber .dropdown ul, .luxbar-menu-material-brown, .luxbar-menu-material-brown .dropdown ul, .luxbar-menu-material-bluegrey, .luxbar-menu-material-bluegrey .dropdown ul {
+.luxbar-menu-material-amber, .luxbar-menu-material-amber .dropdown ul {
   background-color: #ff6f00;
   color: #fff; }
 
@@ -292,7 +292,7 @@
   .luxbar-menu-material-amber .luxbar-hamburger span::before, .luxbar-menu-material-amber .luxbar-hamburger span::after {
     background-color: #fff; }
 
-.luxbar-menu-light, .luxbar-menu-light .dropdown ul, .luxbar-menu-dark, .luxbar-menu-dark .dropdown ul, .luxbar-menu-transparent, .luxbar-menu-transparent .dropdown ul, .luxbar-menu-material-red, .luxbar-menu-material-red .dropdown ul, .luxbar-menu-material-indigo, .luxbar-menu-material-indigo .dropdown ul, .luxbar-menu-material-cyan, .luxbar-menu-material-cyan .dropdown ul, .luxbar-menu-material-green, .luxbar-menu-material-green .dropdown ul, .luxbar-menu-material-amber, .luxbar-menu-material-amber .dropdown ul, .luxbar-menu-material-brown, .luxbar-menu-material-brown .dropdown ul, .luxbar-menu-material-bluegrey, .luxbar-menu-material-bluegrey .dropdown ul {
+.luxbar-menu-material-brown, .luxbar-menu-material-brown .dropdown ul {
   background-color: #3e2723;
   color: #fff; }
 
@@ -307,7 +307,7 @@
   .luxbar-menu-material-brown .luxbar-hamburger span::before, .luxbar-menu-material-brown .luxbar-hamburger span::after {
     background-color: #fff; }
 
-.luxbar-menu-light, .luxbar-menu-light .dropdown ul, .luxbar-menu-dark, .luxbar-menu-dark .dropdown ul, .luxbar-menu-transparent, .luxbar-menu-transparent .dropdown ul, .luxbar-menu-material-red, .luxbar-menu-material-red .dropdown ul, .luxbar-menu-material-indigo, .luxbar-menu-material-indigo .dropdown ul, .luxbar-menu-material-cyan, .luxbar-menu-material-cyan .dropdown ul, .luxbar-menu-material-green, .luxbar-menu-material-green .dropdown ul, .luxbar-menu-material-amber, .luxbar-menu-material-amber .dropdown ul, .luxbar-menu-material-brown, .luxbar-menu-material-brown .dropdown ul, .luxbar-menu-material-bluegrey, .luxbar-menu-material-bluegrey .dropdown ul {
+.luxbar-menu-material-bluegrey, .luxbar-menu-material-bluegrey .dropdown ul {
   background-color: #263238;
   color: #fff; }
 

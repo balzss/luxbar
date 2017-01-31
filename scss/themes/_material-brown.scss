@@ -4,17 +4,17 @@ $material-brown-bg: #3e2723;
 $material-brown-hl: #4e342e;
 $material-brown-fg: $default-fg;
 
-%bg-and-fg {
+%bg-and-fg-brown {
     background-color: $material-brown-bg;
     color: $material-brown-fg;
 }
 
 .luxbar-menu-material-brown {
-    @extend %bg-and-fg;
+    @extend %bg-and-fg-brown;
 
     .dropdown {
         ul {
-            @extend %bg-and-fg;
+            @extend %bg-and-fg-brown;
         }
     }
 
