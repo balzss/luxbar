@@ -1,0 +1,31 @@
+{
+  "name": "luxbar",
+  "version": "0.2.0",
+  "description": "Featherweight, Responsive, CSS Only Navigation bar",
+  "scripts": {
+    "build": "node-sass scss -o build  && postcss --use autoprefixer build/**/*.css -r && cssnano ./build/luxbar.css > ./build/luxbar.min.css",
+    "lint": "sass-lint -c ./scsslint.yml -v -q"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/balzss/luxbar.git"
+  },
+  "keywords": [
+    "CSS",
+    "Navbar",
+    "Menu"
+  ],
+  "author": "balzss",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/balzss/luxbar/issues"
+  },
+  "homepage": "https://github.com/balzss/luxbar#readme",
+  "devDependencies": {
+    "node-sass": "^4.4.0",
+    "autoprefixer": "^6.6.1",
+    "postcss-cli": "^2.6.0",
+    "sass-lint": "^1.10.2",
+    "cssnano-cli": "^1.0.5"
+  }
+}

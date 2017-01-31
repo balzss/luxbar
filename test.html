@@ -7,33 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
-    <link rel="stylesheet" href="luxbar.css">
+    <link rel="stylesheet" href="./build/luxbar.min.css">
 
     <style>
-body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: white;
-    color: #212121;
-    margin: 0px;
-    padding: 0px;
-}
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: white;
+            color: #212121;
+            margin: 0px;
+            padding: 0px;
+        }
 
-.container {
-    max-width: 960px;
-    margin: auto;
-    padding: 12px;
-}
+        .container {
+            max-width: 960px;
+            margin: auto;
+            padding: 12px;
+        }
 
-.container-padding-top {
-    margin-top: 72px;
-}
+        .container-padding-top {
+            margin-top: 72px;
+        }
     </style>
 </head>
 <body>
 
 
     <div class="luxbar luxbar-static">
-        <input type="checkbox" id="luxbar-checkbox">
+        <input type="checkbox" id="luxbar-checkbox" class="luxbar-checkbox">
         <div class="luxbar-menu luxbar-menu-material-cyan"">
             <ul class="luxbar-navigation">
                 <li class="luxbar-header">
@@ -42,6 +42,13 @@ body {
                 </li>
                 <li class="luxbar-item"><a href="#">Home</a></li>
                 <li class="luxbar-item"><a href="#">Demo</a></li>
+                <li class="luxbar-item dropdown"><a href="#">Users</a>
+                    <ul>
+                        <li class="luxbar-item" ><a href="#">Max</a></li>
+                        <li class="luxbar-item" ><a href="#">Edgar</a></li>
+                        <li class="luxbar-item" ><a href="#">John</a></li>
+                    </ul>
+                </li>
                 <li class="luxbar-item active"><a href="#">FAQ</a></li>
                 <li class="luxbar-item"><a href="#">Download</a></li>
                 <li class="luxbar-item"><a href="#">Github</a></li>
