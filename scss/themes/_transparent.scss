@@ -1,0 +1,38 @@
+$transparent-bg: inherit;
+$transparent-fg: #212121;
+
+%bg-and-fg-transparent {
+    background-color: $transparent-bg;
+    color: $transparent-fg;
+}
+
+.luxbar-menu-transparent {
+    @extend %bg-and-fg-transparent;
+
+    .dropdown {
+        ul {
+            @extend %bg-and-fg-transparent;
+        }
+    }
+
+    .active {
+        text-decoration: underline;
+    }
+
+    .luxbar-item {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .luxbar-hamburger {
+        span {
+            background-color: $transparent-fg;
+
+            &::before,
+            &::after {
+                background-color: $transparent-fg;
+            }
+        }
+    }
+}

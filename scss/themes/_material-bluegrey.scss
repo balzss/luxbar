@@ -1,0 +1,41 @@
+@import '../global-variables';
+
+$material-bluegrey-bg: #263238;
+$material-bluegrey-hl: #37474f;
+$material-bluegrey-fg: #fff;
+
+%bg-and-fg-bluegrey {
+    background-color: $material-bluegrey-bg;
+    color: $material-bluegrey-fg;
+}
+
+.luxbar-menu-material-bluegrey {
+    @extend %bg-and-fg-bluegrey;
+
+    .dropdown {
+        ul {
+            @extend %bg-and-fg-bluegrey;
+        }
+    }
+
+    .active {
+        background-color: $material-bluegrey-hl;
+    }
+
+    .luxbar-item {
+        &:hover {
+            background-color: $material-bluegrey-hl;
+        }
+    }
+
+    .luxbar-hamburger {
+        span {
+            background-color: $material-bluegrey-fg;
+
+            &::before,
+            &::after {
+                background-color: $material-bluegrey-fg;
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+@import '../global-variables';
+
+$light-bg: #e0e0e0;
+$light-hl: #bdbdbd;
+$light-fg: #212121;
+
+%bg-and-fg-light {
+    background-color: $light-bg;
+    color: $light-fg;
+}
+
+.luxbar-menu-light {
+    @extend %bg-and-fg-light;
+
+    .dropdown {
+        ul {
+            @extend %bg-and-fg-light;
+        }
+    }
+
+    .active {
+        background-color: $light-hl;
+    }
+
+    .luxbar-item {
+        &:hover {
+            background-color: $light-hl;
+        }
+    }
+
+    .luxbar-hamburger {
+        span {
+            background-color: $light-fg;
+
+            &::before,
+            &::after {
+                background-color: $light-fg;
+            }
+        }
+    }
+}

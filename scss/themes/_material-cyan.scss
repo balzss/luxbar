@@ -1,0 +1,41 @@
+@import '../global-variables';
+
+$material-cyan-bg: #006064;
+$material-cyan-hl: #00838f;
+$material-cyan-fg: #fff;
+
+%bg-and-fg-cyan {
+    background-color: $material-cyan-bg;
+    color: $material-cyan-fg;
+}
+
+.luxbar-menu-material-cyan {
+    @extend %bg-and-fg-cyan;
+
+    .dropdown {
+        ul {
+            @extend %bg-and-fg-cyan;
+        }
+    }
+
+    .active {
+        background-color: $material-cyan-hl;
+    }
+
+    .luxbar-item {
+        &:hover {
+            background-color: $material-cyan-hl;
+        }
+    }
+
+    .luxbar-hamburger {
+        span {
+            background-color: $material-cyan-fg;
+
+            &::before,
+            &::after {
+                background-color: $material-cyan-fg;
+            }
+        }
+    }
+}

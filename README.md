@@ -35,6 +35,13 @@ Then use the HTML code either from the [interactive demo page](https://balzss.gi
                         for="luxbar-checkbox"> <span></span> </label>
             </li>
             <li class="luxbar-item active"><a href="#">Home</a></li>
+            <li class="luxbar-item dropdown"><a href="#">Users</a>
+                <ul>
+                    <li class="luxbar-item" ><a href="#">Max</a></li>
+                    <li class="luxbar-item" ><a href="#">Edgar</a></li>
+                    <li class="luxbar-item" ><a href="#">John</a></li>
+                </ul>
+            </li>
             <li class="luxbar-item"><a href="#">About</a></li>
             <li class="luxbar-item"><a href="#">Contact</a></li>
         </ul>
