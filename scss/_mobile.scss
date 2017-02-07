@@ -94,13 +94,11 @@
     &:not(:checked) ~.luxbar-menu {
         overflow: hidden;
         height: $luxbar-height;
-        max-height: $luxbar-height;
     }
 
     &:checked ~.luxbar-menu {
-        transition: max-height $luxbar-transition;
-        max-height: calc(100vh - #{$luxbar-height});
-        height: auto;
+        transition: height $luxbar-transition;
+        height: 100vh;
         overflow: auto;
 
         li {
