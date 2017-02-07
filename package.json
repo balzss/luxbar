@@ -4,6 +4,7 @@
   "description": "Featherweight, Responsive, CSS Only Navigation bar",
   "scripts": {
     "build": "node-sass scss -o build  && postcss --use autoprefixer build/**/*.css -r && cssnano ./build/luxbar.css > ./build/luxbar.min.css",
+    "postbuild": "copy \"./build/\" \"./\"",
     "lint": "sass-lint -c ./scsslint.yml -v -q"
   },
   "repository": {
