@@ -70,7 +70,7 @@ rules:
     -
       size: 4
   leading-zero: 1
-  nesting-depth: 1
+  nesting-depth: 0
   property-sort-order: 0
   pseudo-element: 1
   quotes: 1

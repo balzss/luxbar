@@ -1,0 +1,51 @@
+@import '../global-variables';
+
+$bs-inverse-bg: #222;
+$bs-inverse-fg: #9d9d9d;
+$bs-inverse-hl-fg: #fff;
+
+%bg-and-fg-bs-inverse {
+    background-color: $bs-inverse-bg;
+    color: $bs-inverse-fg;
+    font-size: 14px;
+}
+
+.luxbar-menu-bs-inverse {
+    @extend %bg-and-fg-bs-inverse;
+
+    .dropdown {
+        ul {
+            @extend %bg-and-fg-bs-inverse;
+        }
+
+        & > a {
+            &::after {
+                border-bottom-color: $bs-inverse-fg;
+            }
+        }
+    }
+
+    .active {
+        color: $bs-inverse-hl-fg;
+    }
+
+    .luxbar-item {
+        &:hover {
+            color: $bs-inverse-hl-fg;
+        }
+    }
+
+    .luxbar-hamburger {
+        border: 1px solid lighten($bs-inverse-bg, 5%);
+        border-radius: 5px;
+
+        span {
+            background-color: $bs-inverse-fg;
+
+            &::before,
+            &::after {
+                background-color: $bs-inverse-fg;
+            }
+        }
+    }
+}

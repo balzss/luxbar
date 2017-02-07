@@ -1,0 +1,157 @@
+@import 'global-variables';
+
+%general-hamburger-span {
+    display: block;
+    height: $hamburger-line-height;
+    width: $hamburger-width;
+    transition: $luxbar-transition;
+}
+
+%hamburger-lines {
+    span {
+        background-color: transparent;
+
+        &::before,
+        &::after {
+            margin-top: 0;
+        }
+    }
+}
+
+.luxbar-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: $luxbar-height;
+}
+
+.luxbar-brand {
+    height: 40px;
+    padding: 13px;
+}
+
+.luxbar-menu {
+    min-height: $luxbar-height;
+    transition: $luxbar-transition;
+    width: 100%;
+}
+
+.luxbar-navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.luxbar-menu,
+.luxbar-item {
+    a {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+    }
+}
+
+.luxbar-item {
+    height: $luxbar-height;
+
+    a {
+        padding: $luxbar-padding;
+        display: block;
+    }
+}
+
+.luxbar-hamburger {
+    padding: $luxbar-padding;
+    position: relative;
+    cursor: pointer;
+
+    span {
+        @extend %general-hamburger-span;
+
+        &::before,
+        &::after {
+            @extend %general-hamburger-span;
+            content: '';
+            position: absolute;
+        }
+
+        &::before {
+            margin-top: -8px;
+        }
+
+        &::after {
+            margin-top: 8px;
+        }
+    }
+}
+
+.luxbar-checkbox {
+    display: none;
+
+    &:not(:checked) ~.luxbar-menu {
+        overflow: hidden;
+        height: $luxbar-height;
+        max-height: $luxbar-height;
+    }
+
+    &:checked ~.luxbar-menu {
+        transition: max-height $luxbar-transition;
+        max-height: calc(100vh - #{$luxbar-height});
+        height: auto;
+        overflow: auto;
+
+        li {
+            .luxbar-hamburger {
+                @extend %hamburger-lines;
+            }
+        }
+    }
+}
+
+.dropdown {
+    position: relative;
+    height: auto;
+    min-height: $luxbar-height;
+
+    &:hover > ul {
+        position: relative;
+        display: block;
+        min-width: 100%;
+    }
+
+    & > a {
+        &::after {
+            $expand-arrow-height: 5px;
+
+            position: absolute;
+            content: '';
+            right: 10px;
+            top: $luxbar-height / 2 - $expand-arrow-height + 1px;
+            border-width: $expand-arrow-height $expand-arrow-height 0;
+            border-color: transparent;
+            border-style: solid;
+        }
+    }
+
+    & > ul {
+        display: block;
+        overflow-x: hidden;
+        list-style: none;
+        padding: 0;
+
+        .luxbar-item {
+            min-width: 100%;
+            height: $luxbar-height / 2;
+            padding: 5px 10px 5px 40px;
+
+            a {
+                min-height: $luxbar-height / 2;
+                line-height: $luxbar-height / 2;
+                padding: 0;
+            }
+        }
+    }
+}
