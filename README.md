@@ -8,7 +8,13 @@ Featherweight, Responsive, CSS Only Navigation bar
 
 # Getting started
 
-Get it with bower:
+Get it with NPM:
+
+```
+npm install luxbar
+```
+
+Or with bower:
 
 ```
 bower install luxbar
