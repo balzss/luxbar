@@ -1,0 +1,41 @@
+@import '../global-variables';
+
+$material-indigo-bg: #1a237e;
+$material-indigo-hl: #283593;
+$material-indigo-fg: #fff;
+
+%bg-and-fg-indigo {
+    background-color: $material-indigo-bg;
+    color: $material-indigo-fg;
+}
+
+.luxbar-menu-material-indigo {
+    @extend %bg-and-fg-indigo;
+
+    .dropdown {
+        ul {
+            @extend %bg-and-fg-indigo;
+        }
+    }
+
+    .active {
+        background-color: $material-indigo-hl;
+    }
+
+    .luxbar-item {
+        &:hover {
+            background-color: $material-indigo-hl;
+        }
+    }
+
+    .luxbar-hamburger {
+        span {
+            background-color: $material-indigo-fg;
+
+            &::before,
+            &::after {
+                background-color: $material-indigo-fg;
+            }
+        }
+    }
+}

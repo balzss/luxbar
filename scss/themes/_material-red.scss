@@ -1,0 +1,41 @@
+@import '../global-variables';
+
+$material-red-bg: #b71c1c;
+$material-red-hl: #c62828;
+$material-red-fg: #fff;
+
+%bg-and-fg-red {
+    background-color: $material-red-bg;
+    color: $material-red-fg;
+}
+
+.luxbar-menu-material-red {
+    @extend %bg-and-fg-red;
+
+    .dropdown {
+        ul {
+            @extend %bg-and-fg-red;
+        }
+    }
+
+    .active {
+        background-color: $material-red-hl;
+    }
+
+    .luxbar-item {
+        &:hover {
+            background-color: $material-red-hl;
+        }
+    }
+
+    .luxbar-hamburger {
+        span {
+            background-color: $material-red-fg;
+
+            &::before,
+            &::after {
+                background-color: $material-red-fg;
+            }
+        }
+    }
+}

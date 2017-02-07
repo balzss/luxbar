@@ -1,0 +1,41 @@
+@import '../global-variables';
+
+$material-amber-bg: #ff6f00;
+$material-amber-hl: #ff8f00;
+$material-amber-fg: #fff;
+
+%bg-and-fg-amber {
+    background-color: $material-amber-bg;
+    color: $material-amber-fg;
+}
+
+.luxbar-menu-material-amber {
+    @extend %bg-and-fg-amber;
+
+    .dropdown {
+        ul {
+            @extend %bg-and-fg-amber;
+        }
+    }
+
+    .active {
+        background-color: $material-amber-hl;
+    }
+
+    .luxbar-item {
+        &:hover {
+            background-color: $material-amber-hl;
+        }
+    }
+
+    .luxbar-hamburger {
+        span {
+            background-color: $material-amber-fg;
+
+            &::before,
+            &::after {
+                background-color: $material-amber-fg;
+            }
+        }
+    }
+}

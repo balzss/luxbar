@@ -8,7 +8,13 @@ Featherweight, Responsive, CSS Only Navigation bar
 
 # Getting started
 
-Get it with bower:
+Get it with NPM:
+
+```
+npm install luxbar
+```
+
+Or with bower:
 
 ```
 bower install luxbar
@@ -16,11 +22,11 @@ bower install luxbar
 
 Or use CDN:
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/luxbar/0.1.0/luxbar.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/luxbar/0.1.2/luxbar.css">
 ```
 
 [Or download the source
-directly](https://github.com/balzss/luxbar/archive/0.1.0.zip)
+directly](https://github.com/balzss/luxbar/archive/0.1.2.zip)
 
 Then use the HTML code either from the [interactive demo page](https://balzss.github.io/luxbar/demo) or from below (the CLASS-NAMES-IN-CAPS are customizable, and you have to replace them with one of the options listed in the customization section):
 
@@ -35,6 +41,13 @@ Then use the HTML code either from the [interactive demo page](https://balzss.gi
                         for="luxbar-checkbox"> <span></span> </label>
             </li>
             <li class="luxbar-item active"><a href="#">Home</a></li>
+            <li class="luxbar-item dropdown"><a href="#">Users</a>
+                <ul>
+                    <li class="luxbar-item" ><a href="#">Max</a></li>
+                    <li class="luxbar-item" ><a href="#">Edgar</a></li>
+                    <li class="luxbar-item" ><a href="#">John</a></li>
+                </ul>
+            </li>
             <li class="luxbar-item"><a href="#">About</a></li>
             <li class="luxbar-item"><a href="#">Contact</a></li>
         </ul>

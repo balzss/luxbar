@@ -1,0 +1,14 @@
+@import '../global-variables';
+
+.luxbar-static {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .luxbar-checkbox {
+        &:checked ~.luxbar-menu {
+            position: absolute;
+        }
+    }
+}
