@@ -16,6 +16,10 @@
         &:not(:checked) ~.luxbar-menu {
             overflow: visible;
         }
+        
+        &:checked ~.luxbar-menu {
+          height: auto;
+        }
     }
 
     .luxbar-menu {
