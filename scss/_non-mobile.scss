@@ -18,7 +18,7 @@
         }
         
         &:checked ~.luxbar-menu {
-          height: auto;
+          height: $luxbar-height;
         }
     }
 
@@ -27,7 +27,6 @@
             border-top: 0;
         }
 
-        height: $luxbar-padding !important;
     }
 
     .dropdown {

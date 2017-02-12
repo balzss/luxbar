@@ -21,6 +21,7 @@
   display: block;
   height: 2px;
   width: 26px;
+  -webkit-transition: 0.6s ease;
   transition: 0.6s ease; }
 
 .luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger span {
@@ -29,10 +30,19 @@
     margin-top: 0; }
 
 .luxbar-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 72px; }
 
 .luxbar-brand {
@@ -41,12 +51,18 @@
 
 .luxbar-menu {
   min-height: 72px;
+  -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
   width: 100%; }
 
 .luxbar-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   list-style: none;
   padding-left: 0;
   margin: 0; }
@@ -81,6 +97,7 @@
     overflow: hidden;
     height: 72px; }
   .luxbar-checkbox:checked ~ .luxbar-menu {
+    -webkit-transition: height 0.6s ease;
     transition: height 0.6s ease;
     height: 100vh;
     overflow: auto; }
@@ -117,8 +134,13 @@
 
 @media screen and (min-width: 768px) {
   .luxbar-navigation {
-    flex-flow: row;
-    justify-content: flex-end; }
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
 
   .luxbar-header {
     margin-right: auto; }
@@ -128,11 +150,11 @@
 
   .luxbar-checkbox:not(:checked) ~ .luxbar-menu {
     overflow: visible; }
+  .luxbar-checkbox:checked ~ .luxbar-menu {
+    height: 72px; }
 
-  .luxbar-menu {
-    height: 24px !important; }
-    .luxbar-menu .luxbar-item {
-      border-top: 0; }
+  .luxbar-menu .luxbar-item {
+    border-top: 0; }
 
   .dropdown {
     height: 72px; }
@@ -148,14 +170,18 @@
         .dropdown > ul .luxbar-item a {
           white-space: nowrap; } }
 .luxbar-checkbox:checked + .luxbar-menu .luxbar-hamburger-doublespin span::before {
-  transform: rotate(225deg); }
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg); }
 .luxbar-checkbox:checked + .luxbar-menu .luxbar-hamburger-doublespin span::after {
-  transform: rotate(-225deg); }
+  -webkit-transform: rotate(-225deg);
+          transform: rotate(-225deg); }
 
 .luxbar-checkbox:checked + .luxbar-menu .luxbar-hamburger-spin span::before {
-  transform: rotate(45deg); }
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
 .luxbar-checkbox:checked + .luxbar-menu .luxbar-hamburger-spin span::after {
-  transform: rotate(-45deg); }
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
 
 .luxbar-menu-light, .luxbar-menu-light .dropdown ul {
   background-color: #e0e0e0;
