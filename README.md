@@ -20,17 +20,16 @@ Or with bower:
 bower install luxbar
 ```
 
-Or use CDN (note that this is not the latest version and some features are
-missing, it'll get updated when the new version is uploaded to jsdelivr):
+Or use the CDN:
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/luxbar/0.1.2/luxbar.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/luxbar/0.2.0/luxbar.min.css">
 ```
 
 Then use the HTML code either from the [interactive demo page](https://balzss.github.io/luxbar/demo) or from below (the CLASS-NAMES-IN-CAPS are customizable, and you have to replace them with one of the options listed in the customization section):
 
 ```html
 <div class="luxbar LUXBAR-STYLE-NAME">
-    <input type="checkbox" id="luxbar-checkbox">
+    <input type="checkbox" id="luxbar-checkbox" class="luxbar-checkbox">
     <div class="luxbar-menu LUXBAR-MENU-COLORSCHEME">
         <ul class="luxbar-navigation">
             <li class="luxbar-header">
