@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Luxbar Demo</title>
+
+        <link rel="stylesheet" href="build/luxbar.min.css">
+        <link rel="stylesheet" href="demo-app/react_build/style.css">
+        <link rel="stylesheet" href="demo-app/react_build/radiothemes.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet">
+
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+    </head>
+    <body>
+        <div class="container">
+            <div id="display"></div>
+
+            <h1>Getting started:</h1>
+            <p>Download the package via bower:</p>
+            <code><pre>bower install luxbar<div class="copy-btn">COPY</div></pre></code>
+
+                <p>Or use the CDN:</p>
+                <code><pre>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/luxbar/0.1.0/luxbar.css&quot;&gt;<div class="copy-btn">COPY</div></pre></code>
+
+                    <p>Or download the source directly:</p>
+
+                    <div class="row center-md center-sm demo-btn-holder">
+                        <a class="demo-btn col-md-3 col-sm-3 col-xs-12">luxbar-0.1.2.zip</a>
+                        <a class="demo-btn col-md-3 col-sm-3 col-xs-12">luxbar-0.1.2.tar.gz</a>
+                    </div>
+
+                    <p>Then customize the look of it (color, menu alignement, etc) with the options below. The navbar will update realtime accordingly. After everything looks the way you want, grab the generated HTML code from the bottom and drop it into your project.</p>
+
+
+            <div class="demo-option-group col-md-12">
+                <h2>Menu builder:</h2>
+                <p>To add a new element click on the plus icon, type in the item name and click enter. To remove one, simply click on the one you want to remove.</p>
+
+            <div id="builder"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5 col-sm-12 col-xs-12" id="option-pane"> </div>
+                <div id="theme-selector" class="col-md-7 col-sm-12 col-xs-12"></div>
+            </div>
+
+            <h1>Generated Code:</h1>
+            <p>Note that you have to replace all the red text with your desired content (hrefs and brandname).</p>
+            <div id="code"></div>
+        </div>
+
+        <div id="footer"></div>
+
+        <script src="demo-app/react_build/bundle.js" type="text/javascript"></script>
+    </body>
+</html>

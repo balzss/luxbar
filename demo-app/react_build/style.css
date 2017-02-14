@@ -1,0 +1,393 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    color: #212121;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 58px;
+}
+
+h2 {
+    margin-top: 24px;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 12px;
+}
+
+.welcome {
+    text-align: center;
+    padding: 42px;
+    margin-bottom: 24px;
+    border: 1px solid #212121;
+}
+
+.variable {
+    color: #8b0000;
+}
+
+code pre {
+    font-family: 'Droid Sans Mono', monospace;
+    border-left: 4px solid #424242;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background-color: #f5f5f5;
+    color: #424242;
+    padding: 10px;
+    overflow: auto;
+    position: relative;
+}
+
+code pre:hover .copy-btn {
+    border-color: #424242;
+    color: #424242;
+    background-color: inherit;
+    user-select: none;
+}
+
+.copy-btn {
+    background-color: transparent;
+    color: transparent;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 4px;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .3s ease;
+}
+
+.listing > li {
+    padding-top: 6px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+.footnote {
+    padding: 46px;
+}
+
+a {
+    color: inherit;
+}
+
+.luxbar-demo{
+    align-items: stretch;
+}
+
+.luxbar-item-demo {
+    flex-grow: 1;
+    flex-basis: 0;
+    border-width: 0px !important;
+}
+
+.luxbar-menu-demo {
+    margin-bottom: 24px;
+    border: 1px solid currentColor;
+}
+
+#luxbar-menu-animation {
+    border: 1px solid currentColor;
+}
+
+#luxbar-style-name {
+    border: 1px solid currentColor;
+}
+
+.luxbar-menu-demo:hover .luxbar-theme-text::before,
+.luxbar-menu-demo.active .luxbar-theme-text::before {
+    content: '>> ';
+}
+
+.luxbar-hamburger-demo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.luxbar-hamburger-demo span::before {
+    margin-top: -8px;
+}
+
+.luxbar-hamburger-demo span::after {
+    margin-top: 8px;
+}
+.luxbar-hamburger-demo span::after,
+.luxbar-hamburger-demo span::before {
+    content: '';
+    position: absolute;
+}
+.luxbar-hamburger-demo span::after,
+.luxbar-hamburger-demo span::before,
+.luxbar-hamburger-demo span {
+    display: block;
+    height: 2px;
+    width: 25px;
+    transition: .6s ease-out;
+    background-color: currentColor;
+}
+
+
+
+.luxbar-doublespin-demo:hover span::before {
+    transform: rotate(225deg);
+    margin-top: 0px;
+}
+
+.luxbar-doublespin-demo:hover span::after {
+    transform: rotate(-225deg);
+    margin-top: 0px;
+}
+
+.luxbar-doublespin-demo:hover span {
+    background: transparent;
+}
+
+
+.luxbar-spin-demo:hover span::before {
+    transform: rotate(45deg);
+    margin-top: 0px;
+}
+
+.luxbar-spin-demo:hover span::after {
+    transform: rotate(-45deg);
+    margin-top: 0px;
+}
+
+.luxbar-spin-demo:hover span {
+    background: transparent;
+}
+
+
+
+.demo-btn-holder {
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+.h2-padding {
+    margin-top: 32px;
+}
+
+form {
+    /* margin-bottom: 48px; */
+}
+
+.demo-option-group {
+    margin-top: 16px;
+    padding: 24px !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.demo-radiomenu {
+    display: flex;
+    flex-direction: column;
+}
+
+.control {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: 0.2s ease;
+}
+.demo-radiomenu input {
+    display: none;
+}
+
+.demo-checkmark {
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background: #f5f5f5;
+    color: #f5f5f5;
+    margin-right: 12px;
+    font-size: 24px;
+    transition: 0.2s ease;
+}
+
+.control .fa-question-circle {
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: auto;
+    font-size: 24px;
+    color: transparent;
+    transition: 0.2s ease;
+}
+
+
+
+
+
+
+
+
+.optionHolder-cyan input:checked + .control:hover .fa-question-circle {
+    color: #006064;
+}
+.optionHolder-cyan input:checked + .control .demo-checkmark {
+    background: #006064;
+}
+
+.optionHolder-cyan input:checked + .control {
+    background-color: #00838F;
+}
+
+
+.optionHolder-dark input:checked + .control:hover .fa-question-circle {
+    color: #212121;
+}
+.optionHolder-dark input:checked + .control .demo-checkmark {
+    background: #212121;
+}
+
+.optionHolder-dark input:checked + .control {
+    background-color: #424242;
+}
+
+
+
+.optionHolder-light input:checked + .control:hover .fa-question-circle {
+    color: #e0e0e0;
+}
+.optionHolder-light input:checked + .control .demo-checkmark {
+    background: #e0e0e0;
+    color: #212121;
+}
+
+.optionHolder-light input:checked + .control {
+    background-color: #bdbdbd;
+    color: #212121;
+}
+
+
+.optionHolder-red input:checked + .control:hover .fa-question-circle {
+    color: #B71C1C;
+}
+.optionHolder-red input:checked + .control .demo-checkmark {
+    background: #B71C1C;
+}
+
+.optionHolder-red input:checked + .control {
+    background-color: #C62828;
+}
+
+
+.optionHolder-indigo input:checked + .control:hover .fa-question-circle {
+    color: #1A237E;
+}
+.optionHolder-indigo input:checked + .control .demo-checkmark {
+    background: #1A237E;
+}
+
+.optionHolder-indigo input:checked + .control {
+    background-color: #283593;
+}
+
+
+.optionHolder-green input:checked + .control:hover .fa-question-circle {
+    color: #1B5E20;
+}
+.optionHolder-green input:checked + .control .demo-checkmark {
+    background: #1B5E20;
+}
+
+.optionHolder-green input:checked + .control {
+    background-color: #2E7D32;
+}
+
+
+.optionHolder-amber input:checked + .control:hover .fa-question-circle {
+    color: #FF6F00;
+}
+.optionHolder-amber input:checked + .control .demo-checkmark {
+    background: #FF6F00;
+}
+
+.optionHolder-amber input:checked + .control {
+    background-color: #FF8F00;
+}
+
+
+.optionHolder-brown input:checked + .control:hover .fa-question-circle {
+    color: #3E2723;
+}
+.optionHolder-brown input:checked + .control .demo-checkmark {
+    background: #3E2723;
+}
+
+.optionHolder-brown input:checked + .control {
+    background-color: #4E342E;
+}
+
+
+.optionHolder-bluegrey input:checked + .control:hover .fa-question-circle {
+    color: #263238;
+}
+.optionHolder-bluegrey input:checked + .control .demo-checkmark {
+    background: #263238;
+}
+
+.optionHolder-bluegrey input:checked + .control {
+    background-color: #37474F;
+}
+
+
+
+.control:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.control:hover .fa-question-circle {
+    color: #bdbdbd;
+}
+input:checked + .control {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    color: #fff;
+}
+
+.demo-btn:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.demo-btn {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    padding: 16px;
+    text-align: center;
+    cursor: pointer;
+    height: 100%;
+    transition: 0.2s ease;
+    margin-right: 24px;
+}
+
+#builder > div {
+    transition: 0.6s ease;
+}
+
+#builder ul {
+    justify-content: space-around;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#builder ul li {
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+}
+
+#builder ul li input{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    font-size: inherit;
+    color: inherit;
+    outline: none;
+    text-align: center;
+}

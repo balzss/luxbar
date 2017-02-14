@@ -1,0 +1,292 @@
+.radiotheme {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: 0.2s ease;
+    color: #fff;
+}
+
+.radiotheme .fa-question-circle {
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: auto;
+    font-size: 24px;
+    transition: 0.2s ease;
+}
+
+.radiotheme:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+input:checked + .radiotheme .demo-checkmark {
+    color: #fff;
+}
+
+input:checked + .radiotheme {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.radiotheme .demo-checkmark,
+.radiotheme .fa-question-circle {
+    color: transparent;
+}
+
+
+
+
+
+
+.radiotheme-dark {
+    color: #fff;
+    background-color: #212121;
+}
+.radiotheme-dark .demo-checkmark {
+    background-color: #212121;
+    color: #212121;
+}
+
+.radiotheme-dark .fa-question-circle {
+    color: #212121;
+}
+
+.radiotheme-dark:hover,
+input:checked + .radiotheme-dark {
+    background-color: #424242;
+}
+
+
+.radiotheme-light {
+    color: #212121;
+    background-color: #e0e0e0;
+}
+.radiotheme-light .demo-checkmark {
+    background-color: #e0e0e0;
+    color: transparent;
+}
+
+
+.radiotheme-light:hover,
+input:checked + .radiotheme-light {
+    background-color: #bdbdbd;
+}
+
+input:checked + .radiotheme-light .demo-checkmark {
+   color: #212121;
+}
+.radiotheme-light .fa-question-circle {
+    color: #e0e0e0;
+}
+
+
+
+.radiotheme-red-900,
+.radiotheme-red-900 .demo-checkmark {
+    background-color: #B71C1C;
+}
+
+.radiotheme-red-900:hover,
+input:checked + .radiotheme-red-900 {
+    background-color: #C62828;
+}
+
+.radiotheme-red-900:hover .fa-question-circle {
+    color: #B71C1C;
+}
+
+
+.radiotheme-indigo-900,
+.radiotheme-indigo-900 .demo-checkmark {
+    background-color: #1A237E;
+}
+
+.radiotheme-indigo-900:hover,
+input:checked + .radiotheme-indigo-900 {
+    background-color: #283593;
+}
+
+.radiotheme-indigo-900:hover .fa-question-circle {
+    color: #1A237E;
+}
+
+
+.radiotheme-cyan-900,
+.radiotheme-cyan-900 .demo-checkmark {
+    background-color: #006064;
+}
+
+.radiotheme-cyan-900:hover,
+input:checked + .radiotheme-cyan-900 {
+    background-color: #00838F;
+}
+
+.radiotheme-cyan-900:hover .fa-question-circle {
+    color: #006064;
+}
+
+
+
+
+.radiotheme-green-900,
+.radiotheme-green-900 .demo-checkmark {
+    background-color: #1B5E20;
+}
+
+.radiotheme-green-900:hover,
+input:checked + .radiotheme-green-900 {
+    background-color: #2E7D32;
+}
+
+.radiotheme-green-900:hover .fa-question-circle {
+    color: #1B5E20;
+}
+
+
+
+
+.radiotheme-amber-900,
+.radiotheme-amber-900 .demo-checkmark {
+    background-color: #FF6F00;
+}
+
+.radiotheme-amber-900:hover,
+input:checked + .radiotheme-amber-900 {
+    background-color: #FF8F00;
+}
+
+.radiotheme-amber-900:hover .fa-question-circle {
+    color: #FF6F00;
+}
+
+
+
+
+.radiotheme-brown-900,
+.radiotheme-brown-900 .demo-checkmark {
+    background-color: #3E2723;
+}
+
+.radiotheme-brown-900:hover,
+input:checked + .radiotheme-brown-900 {
+    background-color: #4E342E;
+}
+
+.radiotheme-brown-900:hover .fa-question-circle {
+    color: #3E2723;
+}
+
+
+
+
+.radiotheme-bluegrey-900,
+.radiotheme-bluegrey-900 .demo-checkmark {
+    background-color: #263238;
+}
+
+.radiotheme-bluegrey-900:hover,
+input:checked + .radiotheme-bluegrey-900 {
+    background-color: #37474F;
+}
+
+.radiotheme-bluegrey-900:hover .fa-question-circle {
+    color: #263238;
+}
+
+
+.radiotheme-red-500,
+.radiotheme-red-500 .demo-checkmark {
+    background-color: #E53935;
+}
+
+.radiotheme-red-500:hover,
+input:checked + .radiotheme-red-500 {
+    background-color: #EF5350;
+}
+
+.radiotheme-red-500:hover .fa-question-circle {
+    color: #E53935;
+}
+
+
+.radiotheme-indigo-500,
+.radiotheme-indigo-500 .demo-checkmark {
+    background-color: #3949AB;
+}
+
+.radiotheme-indigo-500:hover,
+input:checked + .radiotheme-indigo-500 {
+    background-color: #5C6BC0;
+}
+
+.radiotheme-indigo-500:hover .fa-question-circle {
+    color: #3949AB;
+}
+
+
+.radiotheme-cyan-500,
+.radiotheme-cyan-500 .demo-checkmark {
+    background-color: #00ACC1;
+}
+
+.radiotheme-cyan-500:hover,
+input:checked + .radiotheme-cyan-500 {
+    background-color: #00BCD4;
+}
+
+.radiotheme-cyan-500:hover .fa-question-circle {
+    color: #00ACC1;
+}
+
+
+
+
+.radiotheme-green-500,
+.radiotheme-green-500 .demo-checkmark {
+    background-color: #43A047;
+}
+
+.radiotheme-green-500:hover,
+input:checked + .radiotheme-green-500 {
+    background-color: #4CAF50;
+}
+
+.radiotheme-green-500:hover .fa-question-circle {
+    color: #43A047;
+}
+
+
+
+.radiotheme-brown-500,
+.radiotheme-brown-500 .demo-checkmark {
+    background-color: #6D4C41;
+}
+
+.radiotheme-brown-500:hover,
+input:checked + .radiotheme-brown-500 {
+    background-color: #795548;
+}
+
+.radiotheme-brown-500:hover .fa-question-circle {
+    color: #6D4C41;
+}
+
+
+
+
+.radiotheme-bluegrey-500,
+.radiotheme-bluegrey-500 .demo-checkmark {
+    background-color: #607D8B;
+}
+
+.radiotheme-bluegrey-500:hover,
+input:checked + .radiotheme-bluegrey-500 {
+    background-color: #78909C;
+}
+
+.radiotheme-bluegrey-500:hover .fa-question-circle {
+    color: #607D8B;
+}
+
+

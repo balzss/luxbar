@@ -1,0 +1,68 @@
+/*general hamburger specs*/
+
+.luxbar-hamburger {
+    padding: $luxbar-padding;
+    position: relative;
+    cursor: pointer;
+
+    span::before {
+        margin-top: -8px;
+    }
+
+    span::after {
+        margin-top: 8px;
+    }
+
+    span::after, span::before {
+        content: '';
+        position: absolute;
+    }
+
+    span::after, span::before, span {
+        display: block;
+        height: $hamburger-line-height;
+        width: $hamburger-width;
+        transition: $luxbar-transition;
+    }
+}
+
+#luxbar-checkbox {
+    display: none;
+
+    &:checked ~.luxbar-menu {
+        height: 100vh;
+        overflow: auto;
+
+
+        li {
+            .luxbar-hamburger {
+                span {
+                    background-color: transparent;
+                }
+
+                span::before, span::after {
+                    margin-top: 0px;
+                }
+            }
+            /*hamburger-spin*/
+
+            .luxbar-hamburger-spin span::before {
+                transform: rotate(45deg);
+            }
+
+            .luxbar-hamburger-spin span::after {
+                transform: rotate(-45deg);
+            }
+
+            /*hamburger-spin*/
+
+            .luxbar-hamburger-doublespin span::before {
+                transform: rotate(225deg);
+            }
+
+            .luxbar-hamburger-doublespin span::after {
+                transform: rotate(-225deg);
+            }
+        }
+    }
+}
