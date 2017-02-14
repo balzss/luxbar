@@ -391,3 +391,17 @@ input:checked + .control {
     outline: none;
     text-align: center;
 }
+
+.luxbar-demo-item .fa-times {
+    display: none;
+    padding-top: 2px;
+    font-size: 1.2em;
+}
+
+.luxbar-demo-item:hover .fa-times {
+    display: block;
+}
+
+.luxbar-demo-item:hover .demo-item-name {
+    display: none;
+}

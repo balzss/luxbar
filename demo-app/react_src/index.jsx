@@ -175,7 +175,7 @@ class MenuBuilder extends React.Component {
   
   render() {
       const listItems = this.props.items.map((item, index) =>
-              <li key={index} onClick={() => this.removeItem(index)} className="luxbar-item " ><a>{item}</a></li>
+              <li key={index} onClick={() => this.removeItem(index)} className="luxbar-item luxbar-demo-item" ><a><span className="demo-item-name">{item}</span><i className="fa fa-times" aria-hidden="true"></i></a></li>
               );
 
       return(
@@ -220,27 +220,27 @@ class Display extends React.Component {
   }
   
   
-  render() {
-    const listItems = this.props.items.map((item, index) =>
-      <li key={index} className={index === 0 ? "luxbar-item active" : "luxbar-item"}><a>{item}</a></li>
-    );
+    render() {
+        const listItems = this.props.items.map((item, index) =>
+                <li key={index} className={index === 0 ? "luxbar-item active" : "luxbar-item"}><a>{item}</a></li>
+                );
                                   
-    return(
+        return(
             <header id="luxbar" className={this.props.navbarStyle}>
-                        <input type="checkbox" id="luxbar-checkbox"/>
-                        <div id="luxbar-menu" className={this.props.menuAlignement + " luxbar-menu " + this.props.currentTheme}>
-                            <ul className="luxbar-navigation">
-                                <li className="luxbar-header">
-                                {this.props.brandVisibility &&
-                                    <a className="luxbar-brand">LUXBAR</a>
-                                }
-                                    <label id="luxbar-hamburger" className={"luxbar-hamburger " + this.props.hamburgerAnimation} htmlFor="luxbar-checkbox"> <span></span> </label>
-                                </li>
-                                {listItems}
-                            </ul>
-                        </div>
-                </header>
-    )
+                <input type="checkbox" id="luxbar-checkbox" className="luxbar-checkbox"/>
+                <div id="luxbar-menu" className={this.props.menuAlignement + " luxbar-menu " + this.props.currentTheme}>
+                    <ul className="luxbar-navigation">
+                        <li className="luxbar-header">
+                        {this.props.brandVisibility &&
+                            <a className="luxbar-brand">LUXBAR</a>
+                        }
+                            <label id="luxbar-hamburger" className={"luxbar-hamburger " + this.props.hamburgerAnimation} htmlFor="luxbar-checkbox"> <span></span> </label>
+                        </li>
+                        {listItems}
+                    </ul>
+                </div>
+            </header>
+        )
   }
 }
 
@@ -272,12 +272,12 @@ class Code extends React.Component {
       ReactDOMServer.renderToStaticMarkup(<li key={index} className="luxbar-item"><a href="#">{item}</a></li>)
     );
     const splitItems = listItems.join('\r\n            ');
-    const brandItem = this.props.brandVisibility ? '<a href="/luxbar" class="luxbar-brand">LUXBAR</a>\n                ' : '';
+    const brandItem = this.props.brandVisibility ? '<a href="/luxbar" classN="luxbar-brand">LUXBAR</a>\n                ' : '';
 
     return(
             <code>
-            <pre>
-{`<header id="luxbar" class="luxbar-fixed">
+            <pre><div id="htmlCode">
+{`<header id="luxbar" classN="luxbar-fixed">
     <input type="checkbox" id="luxbar-checkbox"/>
     <div class="luxbar-menu ${this.props.menuAlignement} ${this.props.currentTheme}">
         <ul class="luxbar-navigation">
@@ -288,7 +288,8 @@ class Code extends React.Component {
             ${splitItems}
         </ul>
     </div>
-</header>`}<div className="copy-btn">COPY</div>
+</header>`}</div><div className="copy-btn" data-clipboard-target="#htmlCode"><span id="copyHint" className="hint--left hint--rounded" aria-label="copy to clipboard">COPY</span>
+</div>
     </pre> 
     </code>
                     )
@@ -541,7 +542,7 @@ class OptionPane extends React.Component {
     
     const brandVisibilities = brandVisibilityList.map((brandVisibility, index) =>
             <div key={index} className="optionHolder">
-            <input checked={this.props.brandVisibility && brandVisibility.name === 'Show'} id={brandVisibility.htmlId} value={brandVisibility.name} onChange={this.onChangeBrandVisibility.bind(this)} type="radio" name="radio" />
+            <input checked={(this.props.brandVisibility && brandVisibility.name === 'Show') || (!this.props.brandVisibility && brandVisibility.name === 'Hide')} id={brandVisibility.htmlId} value={brandVisibility.name} onChange={this.onChangeBrandVisibility.bind(this)} type="radio" name="radio" />
             <label className="control" htmlFor={brandVisibility.htmlId} ><span className="demo-checkmark"><i className="fa fa-check" aria-hidden="true"></i></span> {brandVisibility.name} <i className="fa fa-question-circle" aria-hidden="true"></i> </label>
             </div>
     );

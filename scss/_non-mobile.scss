@@ -4,10 +4,6 @@
         justify-content: flex-end;
     }
 
-    .luxbar-header {
-        margin-right: auto;
-    }
-
     .luxbar-hamburger {
         display: none;
     }
@@ -27,6 +23,10 @@
             border-top: 0;
         }
 
+    }
+
+    .luxbar-menu-right .luxbar-header {
+        margin-right: auto;
     }
 
     .dropdown {

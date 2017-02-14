@@ -1,4 +1,7 @@
 {
-    "name": "luxbar",
-    "version": "0.2.1"
+  "name": "luxbar",
+  "version": "0.2.1",
+  "devDependencies": {
+    "clipboard": "^1.6.0"
+  }
 }

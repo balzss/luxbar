@@ -26,9 +26,21 @@
     height: $luxbar-height;
 }
 
+.luxbar-menu-left {
+    .luxbar-navigation, .luxbar-header {
+        justify-content: flex-start;
+    }
+}
+
+.luxbar-menu-right {
+    .luxbar-hamburger {
+        margin-left: auto;
+    }
+}
+
 .luxbar-brand {
-    height: 40px;
-    padding: 13px;
+    font-size: 1.6em;
+    padding: $luxbar-padding;
 }
 
 .luxbar-menu {

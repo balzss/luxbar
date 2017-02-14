@@ -1,6 +1,5 @@
-@import '../global-variables';
-
 .luxbar-static {
+    box-shadow: $luxbar-shadow;
     width: 100%;
     position: absolute;
     top: 0;

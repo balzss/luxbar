@@ -1,8 +1,10 @@
 .luxbar-default {
   width: 100%;
-  position: relative; }
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 
 .luxbar-static {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   width: 100%;
   position: absolute;
   top: 0;
@@ -15,13 +17,21 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000; }
+  z-index: 1000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+.luxbar-fixed-bottom {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 
 .luxbar-hamburger span, .luxbar-hamburger span::before, .luxbar-hamburger span::after {
   display: block;
   height: 2px;
   width: 26px;
-  -webkit-transition: 0.6s ease;
   transition: 0.6s ease; }
 
 .luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger span {
@@ -30,39 +40,30 @@
     margin-top: 0; }
 
 .luxbar-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 72px; }
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 58px; }
+
+.luxbar-menu-left .luxbar-navigation, .luxbar-menu-left .luxbar-header {
+  justify-content: flex-start; }
+
+.luxbar-menu-right .luxbar-hamburger {
+  margin-left: auto; }
 
 .luxbar-brand {
-  height: 40px;
-  padding: 13px; }
+  font-size: 1.6em;
+  padding: 18px 24px 18px 24px; }
 
 .luxbar-menu {
-  min-height: 72px;
-  -webkit-transition: 0.6s ease;
+  min-height: 58px;
   transition: 0.6s ease;
   width: 100%; }
 
 .luxbar-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   list-style: none;
   padding-left: 0;
   margin: 0; }
@@ -74,13 +75,13 @@
   cursor: pointer; }
 
 .luxbar-item {
-  height: 72px; }
+  height: 58px; }
   .luxbar-item a {
-    padding: 24px;
+    padding: 18px 24px 18px 24px;
     display: block; }
 
 .luxbar-hamburger {
-  padding: 24px;
+  padding: 18px 24px 18px 24px;
   position: relative;
   cursor: pointer; }
   .luxbar-hamburger span::before, .luxbar-hamburger span::after {
@@ -95,9 +96,8 @@
   display: none; }
   .luxbar-checkbox:not(:checked) ~ .luxbar-menu {
     overflow: hidden;
-    height: 72px; }
+    height: 58px; }
   .luxbar-checkbox:checked ~ .luxbar-menu {
-    -webkit-transition: height 0.6s ease;
     transition: height 0.6s ease;
     height: 100vh;
     overflow: auto; }
@@ -105,7 +105,7 @@
 .dropdown {
   position: relative;
   height: auto;
-  min-height: 72px; }
+  min-height: 58px; }
   .dropdown:hover > ul {
     position: relative;
     display: block;
@@ -114,7 +114,7 @@
     position: absolute;
     content: '';
     right: 10px;
-    top: 32px;
+    top: 25px;
     border-width: 5px 5px 0;
     border-color: transparent;
     border-style: solid; }
@@ -125,25 +125,17 @@
     padding: 0; }
     .dropdown > ul .luxbar-item {
       min-width: 100%;
-      height: 36px;
+      height: 29px;
       padding: 5px 10px 5px 40px; }
       .dropdown > ul .luxbar-item a {
-        min-height: 36px;
-        line-height: 36px;
+        min-height: 29px;
+        line-height: 29px;
         padding: 0; }
 
 @media screen and (min-width: 768px) {
   .luxbar-navigation {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end; }
-
-  .luxbar-header {
-    margin-right: auto; }
+    flex-flow: row;
+    justify-content: flex-end; }
 
   .luxbar-hamburger {
     display: none; }
@@ -151,17 +143,20 @@
   .luxbar-checkbox:not(:checked) ~ .luxbar-menu {
     overflow: visible; }
   .luxbar-checkbox:checked ~ .luxbar-menu {
-    height: 72px; }
+    height: 58px; }
 
   .luxbar-menu .luxbar-item {
     border-top: 0; }
 
+  .luxbar-menu-right .luxbar-header {
+    margin-right: auto; }
+
   .dropdown {
-    height: 72px; }
+    height: 58px; }
     .dropdown:hover > ul {
       position: absolute;
       left: 0;
-      top: 72px;
+      top: 58px;
       padding: 0; }
     .dropdown > ul {
       display: none; }
@@ -170,18 +165,14 @@
         .dropdown > ul .luxbar-item a {
           white-space: nowrap; } }
 .luxbar-checkbox:checked + .luxbar-menu .luxbar-hamburger-doublespin span::before {
-  -webkit-transform: rotate(225deg);
-          transform: rotate(225deg); }
+  transform: rotate(225deg); }
 .luxbar-checkbox:checked + .luxbar-menu .luxbar-hamburger-doublespin span::after {
-  -webkit-transform: rotate(-225deg);
-          transform: rotate(-225deg); }
+  transform: rotate(-225deg); }
 
 .luxbar-checkbox:checked + .luxbar-menu .luxbar-hamburger-spin span::before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg); }
+  transform: rotate(45deg); }
 .luxbar-checkbox:checked + .luxbar-menu .luxbar-hamburger-spin span::after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg); }
+  transform: rotate(-45deg); }
 
 .luxbar-menu-light, .luxbar-menu-light .dropdown ul {
   background-color: #e0e0e0;
