@@ -288,7 +288,7 @@ class Code extends React.Component {
             ${splitItems}
         </ul>
     </div>
-</header>`}</div><div className="copy-btn" data-clipboard-target="#htmlCode"><span id="copyHint" className="hint--left hint--rounded" aria-label="copy to clipboard">COPY</span>
+</header>`}</div><div className="copy-btn" data-clipboard-target="#htmlCode"><span id="copyHint" className="hint--left hint--rounded" aria-label="">COPY</span>
 </div>
     </pre> 
     </code>

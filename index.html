@@ -20,26 +20,37 @@
     <body>
         <div class="container">
             <div id="display"></div>
-
-            <h1>Getting started:</h1>
-            <p>Download with NPM</p>
-            <code><pre>npm install luxbar<div class="copy-btn">COPY</div></pre></code>
-
-            <p>Or via bower</p>
-            <code><pre>bower install luxbar<div class="copy-btn">COPY</div></pre></code>
-
-                <p>Or use the CDN:</p>
-                <code><pre>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/luxbar/0.1.0/luxbar.css&quot;&gt;<div class="copy-btn">COPY</div></pre></code>
-
-                    <p>Or download the source directly:</p>
-
+            <div class="demo-option-group" style="text-align: center;">
+            <h1>Luxbar</h1>
+            <h3>Featherweight, Responsive, CSS Only Navigation Bar</h3>
                     <div class="row center-md center-sm demo-btn-holder">
-                        <a class="demo-btn col-md-3 col-sm-3 col-xs-12">luxbar-0.1.2.zip</a>
-                        <a class="demo-btn col-md-3 col-sm-3 col-xs-12">luxbar-0.1.2.tar.gz</a>
+                        <a class="demo-btn col-md-2 col-sm-2 col-xs-12"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+                        <a class="demo-btn col-md-2 col-sm-2 col-xs-12"><i class="fa fa-file-text-o" aria-hidden="true"></i> Docs</a>
+                        <a class="demo-btn col-md-2 col-sm-2 col-xs-12"><i class="fa fa-question-circle-o" aria-hidden="true"></i> FAQ</a>
                     </div>
+            </div>
 
-                    <p>Then customize the look of it (color, menu alignement, etc) with the options below. The navbar will update realtime accordingly. After everything looks the way you want, grab the generated HTML code from the bottom and drop it into your project.</p>
-
+            <div class="demo-option-group">
+                <h1>Getting started:</h1>
+                <p>Download with NPM</p>
+                <code><pre><div id="npmCode">npm install luxbar</div><div class="copy-btn">COPY</div><div id="npmCopyBtn" class="copy-btn" data-clipboard-target="#npmCode"><span id="npmHint" class="hint--left hint--rounded" aria-label="">COPY</span></div></pre></code>
+                
+                <p>Or via bower</p>
+                <code><pre>bower install luxbar<div class="copy-btn">COPY</div></pre></code>
+                
+                    <p>Or use the CDN:</p>
+                    <code><pre>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/luxbar/0.1.0/luxbar.css&quot;&gt;<div class="copy-btn">COPY</div></pre></code>
+                
+                        <p>Or download the source directly:</p>
+                
+                        <div class="row center-md center-sm demo-btn-holder">
+                            <a class="demo-btn col-md-3 col-sm-3 col-xs-12">luxbar-0.1.2.zip</a>
+                            <a class="demo-btn col-md-3 col-sm-3 col-xs-12">luxbar-0.1.2.tar.gz</a>
+                        </div>
+                
+                        <p>Then customize the look of it (color, menu alignement, etc) with the options below. The navbar will update realtime accordingly. After everything looks the way you want, grab the generated HTML code from the bottom and drop it into your project.</p>
+                
+            </div>
 
             <div class="demo-option-group col-md-12">
                 <h2>Menu builder:</h2>
@@ -69,11 +80,11 @@ clipboard.on('success', function(e) {
     console.info('Action:', e.action);
     console.info('Text:', e.text);
     console.info('Trigger:', e.trigger);
-
     e.clearSelection();
-    document.getElementById("copyHint").setAttribute("aria-label", "Copied!");
-    setInterval(function(){
-        document.getElementById("copyHint").setAttribute("aria-label", "Copy to clipboard");
+    var btnElem = document.getElementById(e.trigger.id).firstChild;
+    btnElem.setAttribute("aria-label", "Copied!");
+    setTimeout(function(){
+        btnElem.setAttribute("aria-label", "");
     },1000);
 });
         </script>
