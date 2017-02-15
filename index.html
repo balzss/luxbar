@@ -20,44 +20,43 @@
     <body>
         <div class="container">
             <div id="display"></div>
-            <div class="demo-option-group" style="text-align: center;">
-            <h1>Luxbar</h1>
-            <h3>Featherweight, Responsive, CSS Only Navigation Bar</h3>
-                    <div class="row center-md center-sm demo-btn-holder">
-                        <a class="demo-btn col-md-2 col-sm-2 col-xs-12"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
-                        <a class="demo-btn col-md-2 col-sm-2 col-xs-12"><i class="fa fa-file-text-o" aria-hidden="true"></i> Docs</a>
-                        <a class="demo-btn col-md-2 col-sm-2 col-xs-12"><i class="fa fa-question-circle-o" aria-hidden="true"></i> FAQ</a>
-                    </div>
+
+            <div style="text-align: center;">
+                <h1 style="font-size: 52px;">Luxbar</h1>
+                <h2>Featherweight, Responsive, CSS Only Navigation Bar</h2>
+                <div class="row center-xs center-md center-sm demo-btn-holder">
+                    <a class="demo-btn col-md-2 col-sm-2 col-xs-10"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+                    <a class="demo-btn col-md-2 col-sm-2 col-xs-10"><i class="fa fa-file-text-o" aria-hidden="true"></i> Docs</a>
+                    <a class="demo-btn col-md-2 col-sm-2 col-xs-10"><i class="fa fa-question-circle-o" aria-hidden="true"></i> FAQ</a>
+                </div>
             </div>
 
-            <div class="demo-option-group">
-                <h1>Getting started:</h1>
-                <p>Download with NPM</p>
+            <h1 style="padding-top: 24px;">Getting started:</h1>
+                <p>Download with NPM:</p>
                 <code><pre><div id="npmCode">npm install luxbar</div><div class="copy-btn">COPY</div><div id="npmCopyBtn" class="copy-btn" data-clipboard-target="#npmCode"><span id="npmHint" class="hint--left hint--rounded" aria-label="">COPY</span></div></pre></code>
                 
-                <p>Or via bower</p>
+                <p>Or with Bower:</p>
                 <code><pre>bower install luxbar<div class="copy-btn">COPY</div></pre></code>
                 
-                    <p>Or use the CDN:</p>
+                    <p>Or use CDN:</p>
                     <code><pre>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/luxbar/0.1.0/luxbar.css&quot;&gt;<div class="copy-btn">COPY</div></pre></code>
-                
+
                         <p>Or download the source directly:</p>
-                
-                        <div class="row center-md center-sm demo-btn-holder">
-                            <a class="demo-btn col-md-3 col-sm-3 col-xs-12">luxbar-0.1.2.zip</a>
-                            <a class="demo-btn col-md-3 col-sm-3 col-xs-12">luxbar-0.1.2.tar.gz</a>
+
+                        <div class="row center-md center-sm center-xs demo-btn-holder">
+                            <a class="demo-btn col-md-3 col-sm-3 col-xs-10"><i class="fa fa-download" aria-hidden="true"></i> luxbar-0.1.2.zip</a>
+                            <a class="demo-btn col-md-3 col-sm-3 col-xs-10"><i class="fa fa-download" aria-hidden="true"></i> luxbar-0.1.2.tar.gz</a>
                         </div>
-                
+
                         <p>Then customize the look of it (color, menu alignement, etc) with the options below. The navbar will update realtime accordingly. After everything looks the way you want, grab the generated HTML code from the bottom and drop it into your project.</p>
-                
-            </div>
 
-            <div class="demo-option-group col-md-12">
-                <h2>Menu builder:</h2>
-                <p>To add a new element click on the plus icon, type in the item name and click enter. To remove one, simply click on the one you want to remove.</p>
 
-            <div id="builder"></div>
-            </div>
+                        <div class="demo-option-group col-md-12">
+                            <h2>Menu builder:</h2>
+                            <p>To add a new element click on the plus icon, type in the item name and click enter. To remove one, simply click on the one you want to remove.</p>
+
+                            <div id="builder"></div>
+                        </div>
 
             <div class="row">
                 <div class="col-md-5 col-sm-12 col-xs-12" id="option-pane"> </div>

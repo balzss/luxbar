@@ -1,0 +1,234 @@
+/******* color variables *******/
+$dark-bg: #212121;
+$dark-hl: #424242;
+$dark-fg: #fff;
+
+$light-bg: #e0e0e0;
+$light-hl: #bdbdbd;
+$light-fg: #212121;
+
+$material-red-bg: #b71c1c;
+$material-red-hl: #c62828;
+$material-red-fg: #fff;
+
+$material-cyan-bg: #006064;
+$material-cyan-hl: #00838f;
+$material-cyan-fg: #fff;
+
+$material-indigo-bg: #1a237e;
+$material-indigo-hl: #283593;
+$material-indigo-fg: #fff;
+
+$material-green-bg: #1b5e20;
+$material-green-hl: #2e7d32;
+$material-green-fg: #fff;
+
+$material-amber-bg: #ff6f00;
+$material-amber-hl: #ff8f00;
+$material-amber-fg: #fff;
+
+$material-bluegrey-bg: #263238;
+$material-bluegrey-hl: #37474f;
+$material-bluegrey-fg: #fff;
+
+$material-brown-bg: #3e2723;
+$material-brown-hl: #4e342e;
+$material-brown-fg: #fff;
+
+/******* default dark *******/
+.luxbar-menu-dark,
+.luxbar-menu-dark .dropdown ul {
+    background-color: $dark-bg;
+    color: $dark-fg;
+}
+
+.luxbar-menu-dark {
+    .active,
+    .luxbar-item:hover {
+        background-color: $dark-hl;
+    }
+
+    .luxbar-hamburger {
+        span,
+        span::before,
+        span::after {
+            background-color: $dark-fg;
+        }
+    }
+}
+
+/******* default light *******/
+.luxbar-menu-light,
+.luxbar-menu-light .dropdown ul {
+    background-color: $light-bg;
+    color: $light-fg;
+}
+
+.luxbar-menu-light {
+    .active,
+    .luxbar-item:hover {
+        background-color: $light-hl;
+    }
+
+    .luxbar-hamburger {
+        span,
+        span::before,
+        span::after {
+            background-color: $light-fg;
+        }
+    }
+}
+
+/******* default material-red *******/
+.luxbar-menu-material-red,
+.luxbar-menu-material-red .dropdown ul {
+    background-color: $material-red-bg;
+    color: $material-red-fg;
+}
+
+.luxbar-menu-material-red {
+    .active,
+    .luxbar-item:hover {
+        background-color: $material-red-hl;
+    }
+
+    .luxbar-hamburger {
+        span,
+        span::before,
+        span::after {
+            background-color: $material-red-fg;
+        }
+    }
+}
+
+/******* default material-indigo *******/
+.luxbar-menu-material-indigo,
+.luxbar-menu-material-indigo .dropdown ul {
+    background-color: $material-indigo-bg;
+    color: $material-indigo-fg;
+}
+
+.luxbar-menu-material-indigo {
+    .active,
+    .luxbar-item:hover {
+        background-color: $material-indigo-hl;
+    }
+
+    .luxbar-hamburger {
+        span,
+        span::before,
+        span::after {
+            background-color: $material-indigo-fg;
+        }
+    }
+}
+
+/******* default material-green *******/
+.luxbar-menu-material-green,
+.luxbar-menu-material-green .dropdown ul {
+    background-color: $material-green-bg;
+    color: $material-green-fg;
+}
+
+.luxbar-menu-material-green {
+    .active,
+    .luxbar-item:hover {
+        background-color: $material-green-hl;
+    }
+
+    .luxbar-hamburger {
+        span,
+        span::before,
+        span::after {
+            background-color: $material-green-fg;
+        }
+    }
+}
+
+/******* default material-amber *******/
+.luxbar-menu-material-amber,
+.luxbar-menu-material-amber .dropdown ul {
+    background-color: $material-amber-bg;
+    color: $material-amber-fg;
+}
+
+.luxbar-menu-material-amber {
+    .active,
+    .luxbar-item:hover {
+        background-color: $material-amber-hl;
+    }
+
+    .luxbar-hamburger {
+        span,
+        span::before,
+        span::after {
+            background-color: $material-amber-fg;
+        }
+    }
+}
+
+/******* default material-brown *******/
+.luxbar-menu-material-brown,
+.luxbar-menu-material-brown .dropdown ul {
+    background-color: $material-brown-bg;
+    color: $material-brown-fg;
+}
+
+.luxbar-menu-material-brown {
+    .active,
+    .luxbar-item:hover {
+        background-color: $material-brown-hl;
+    }
+
+    .luxbar-hamburger {
+        span,
+        span::before,
+        span::after {
+            background-color: $material-brown-fg;
+        }
+    }
+}
+
+/******* default material-bluegrey *******/
+.luxbar-menu-material-bluegrey,
+.luxbar-menu-material-bluegrey .dropdown ul {
+    background-color: $material-bluegrey-bg;
+    color: $material-bluegrey-fg;
+}
+
+.luxbar-menu-material-bluegrey {
+    .active,
+    .luxbar-item:hover {
+        background-color: $material-bluegrey-hl;
+    }
+
+    .luxbar-hamburger {
+        span,
+        span::before,
+        span::after {
+            background-color: $material-bluegrey-fg;
+        }
+    }
+}
+
+/******* default material-cyan *******/
+.luxbar-menu-material-cyan,
+.luxbar-menu-material-cyan .dropdown ul {
+    background-color: $material-cyan-bg;
+    color: $material-cyan-fg;
+}
+
+.luxbar-menu-material-cyan {
+    .active,
+    .luxbar-item:hover {
+        background-color: $material-cyan-hl;
+    }
+
+    .luxbar-hamburger {
+        span,
+        span::before,
+        span::after {
+            background-color: $material-cyan-fg;
+        }
+    }
+}

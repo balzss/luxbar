@@ -10,7 +10,7 @@ console.clear();
 console.log('App started...');
 
 const stateDefault = {
-  items: ['Home', 'About', 'Contact'],
+  items: ['Item 1', 'Item 2', 'Item 3', 'Item 4'],
   currentTheme: 'luxbar-menu-material-cyan',
   navbarStyle: 'luxbar-fixed',
   menuAlignement: 'luxbar-menu-right',
@@ -232,7 +232,7 @@ class Display extends React.Component {
                     <ul className="luxbar-navigation">
                         <li className="luxbar-header">
                         {this.props.brandVisibility &&
-                            <a className="luxbar-brand">LUXBAR</a>
+                            <a className="luxbar-brand">Luxbar Demo</a>
                         }
                             <label id="luxbar-hamburger" className={"luxbar-hamburger " + this.props.hamburgerAnimation} htmlFor="luxbar-checkbox"> <span></span> </label>
                         </li>
