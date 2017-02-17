@@ -1,6 +1,6 @@
 ## Example usage of the dropdown menu:
 More info on customization can be found in the [demo
-page](https://balzss.github.io/balzss/luxbar)
+page](https://balzss.github.io/luxbar)
 
 ```html
 <div class="luxbar LUXBAR-STYLE-NAME">
