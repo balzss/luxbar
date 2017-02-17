@@ -172,6 +172,10 @@ a {
     margin-bottom: 36px;
 }
 
+.demo-btn {
+    text-decoration: none;
+}
+
 .h2-padding {
     margin-top: 32px;
 }
@@ -391,6 +395,7 @@ input:checked + .control {
     color: inherit;
     outline: none;
     text-align: center;
+    padding-top: 18px;
 }
 
 .luxbar-demo-item .fa-times {
@@ -406,3 +411,10 @@ input:checked + .control {
 .luxbar-demo-item:hover .demo-item-name {
     display: none;
 }
+
+
+.fa-question-circle {
+    display: none !important;
+}
+
+

@@ -272,26 +272,23 @@ class Code extends React.Component {
       ReactDOMServer.renderToStaticMarkup(<li key={index} className="luxbar-item"><a href="#">{item}</a></li>)
     );
     const splitItems = listItems.join('\r\n            ');
-    const brandItem = this.props.brandVisibility ? '<a href="/luxbar" classN="luxbar-brand">LUXBAR</a>\n                ' : '';
+    const brandItem = this.props.brandVisibility ? '<a href="#" classN="luxbar-brand">LUXBAR</a>\n                ' : '';
 
     return(
             <code>
             <pre><div id="htmlCode">
-{`<header id="luxbar" classN="luxbar-fixed">
+{`<header id="luxbar" classNameN="luxbar-fixed">
     <input type="checkbox" id="luxbar-checkbox"/>
-    <div class="luxbar-menu ${this.props.menuAlignement} ${this.props.currentTheme}">
-        <ul class="luxbar-navigation">
-            <li class="luxbar-header">
-                ${brandItem}<label class="luxbar-hamburger ${this.props.hamburgerAnimation}" 
+    <div className="luxbar-menu ${this.props.menuAlignement} ${this.props.currentTheme}">
+        <ul className="luxbar-navigation">
+            <li className="luxbar-header">
+                ${brandItem}<label className="luxbar-hamburger ${this.props.hamburgerAnimation}" 
                 id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
             </li>
             ${splitItems}
         </ul>
     </div>
-</header>`}</div><div className="copy-btn" data-clipboard-target="#htmlCode"><span id="copyHint" className="hint--left hint--rounded" aria-label="">COPY</span>
-</div>
-    </pre> 
-    </code>
+</header>`}</div><div className="copy-btn">COPY</div><div id="htmlCopyBtn" className="copy-btn" data-clipboard-target="#htmlCode"><span id="htmlHint" className="hint--left hint--rounded" aria-label="">COPY</span></div></pre></code>
                     )
   }
 }

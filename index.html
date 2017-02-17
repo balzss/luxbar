@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="demo-app/react_build/style.css">
         <link rel="stylesheet" href="demo-app/react_build/radiothemes.css">
 
+        <link rel="icon" href="demo-app/favicon.png" type="image/x-icon" />
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
@@ -25,9 +27,9 @@
                 <h1 style="font-size: 52px;">Luxbar</h1>
                 <h2>Featherweight, Responsive, CSS Only Navigation Bar</h2>
                 <div class="row center-xs center-md center-sm demo-btn-holder">
-                    <a class="demo-btn col-md-2 col-sm-2 col-xs-10"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
-                    <a class="demo-btn col-md-2 col-sm-2 col-xs-10"><i class="fa fa-file-text-o" aria-hidden="true"></i> Docs</a>
-                    <a class="demo-btn col-md-2 col-sm-2 col-xs-10"><i class="fa fa-question-circle-o" aria-hidden="true"></i> FAQ</a>
+                    <a class="demo-btn col-md-2 col-sm-2 col-xs-10" href="https://github.com/balzss/luxbar"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+                    <a class="demo-btn col-md-2 col-sm-2 col-xs-10" href="https://github.com/balzss/luxbar/blob/master/docs/docs.md"><i class="fa fa-file-text-o" aria-hidden="true"></i> Docs</a>
+                    <a class="demo-btn col-md-2 col-sm-2 col-xs-10" href="https://github.com/balzss/luxbar/blob/master/docs/faq.md"><i class="fa fa-question-circle-o" aria-hidden="true"></i> FAQ</a>
                 </div>
             </div>
 
@@ -36,19 +38,21 @@
                 <code><pre><div id="npmCode">npm install luxbar</div><div class="copy-btn">COPY</div><div id="npmCopyBtn" class="copy-btn" data-clipboard-target="#npmCode"><span id="npmHint" class="hint--left hint--rounded" aria-label="">COPY</span></div></pre></code>
                 
                 <p>Or with Bower:</p>
-                <code><pre>bower install luxbar<div class="copy-btn">COPY</div></pre></code>
+                <code><pre><div id="bowerCode">bower install luxbar</div><div class="copy-btn">COPY</div><div id="bowerCopyBtn" class="copy-btn" data-clipboard-target="#bowerCode"><span id="bowerHint" class="hint--left hint--rounded" aria-label="">COPY</span></div></pre></code>
                 
                     <p>Or use CDN:</p>
-                    <code><pre>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/luxbar/0.1.0/luxbar.css&quot;&gt;<div class="copy-btn">COPY</div></pre></code>
+                <code><pre><div id="cdnCode">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/luxbar/0.1.0/luxbar.css&quot;&gt;</div><div class="copy-btn">COPY</div><div id="cdnCopyBtn" class="copy-btn" data-clipboard-target="#cdnCode"><span id="cdnHint" class="hint--left hint--rounded" aria-label="">COPY</span></div></pre></code>
+
 
                         <p>Or download the source directly:</p>
 
                         <div class="row center-md center-sm center-xs demo-btn-holder">
-                            <a class="demo-btn col-md-3 col-sm-3 col-xs-10"><i class="fa fa-download" aria-hidden="true"></i> luxbar-0.1.2.zip</a>
-                            <a class="demo-btn col-md-3 col-sm-3 col-xs-10"><i class="fa fa-download" aria-hidden="true"></i> luxbar-0.1.2.tar.gz</a>
+                            <a class="demo-btn col-md-3 col-sm-3 col-xs-10" href="https://github.com/balzss/luxbar/archive/0.3.0.tar.zip"><i class="fa fa-download" aria-hidden="true"></i> luxbar-0.3.0.zip</a>
+                            <a class="demo-btn col-md-3 col-sm-3 col-xs-10" href="https://github.com/balzss/luxbar/archive/0.3.0.tar.gz"><i class="fa fa-download" aria-hidden="true"></i> luxbar-0.3.0.tar.gz</a>
                         </div>
 
                         <p>Then customize the look of it (color, menu alignement, etc) with the options below. The navbar will update realtime accordingly. After everything looks the way you want, grab the generated HTML code from the bottom and drop it into your project.</p>
+                        <p>Please note that that the dropdown can't be configured throught the demo app (yet!) so if you want to know how to implement it <a href="https://github.com/balzss/luxbar/blob/master/docs/dropdown-example.md" style="text-decoration: underline; ">check out this link</a>.</p>
 
 
                         <div class="demo-option-group col-md-12">
@@ -64,7 +68,6 @@
             </div>
 
             <h1>Generated Code:</h1>
-            <p>Note that you have to replace all the red text with your desired content (hrefs and brandname).</p>
             <div id="code"></div>
         </div>
 
