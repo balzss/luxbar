@@ -2,7 +2,7 @@
 
 Featherweight, Responsive, CSS Only Navigation bar
 
-![Screencap](blob:http://imgur.com/20520e25-b780-4b9b-b6f0-e64a1881f2df)
+![Screencap](http://i.imgur.com/0eGzsNt.gif)
 
 [Try out all the options at the demo page!](https://balzss.github.io/luxbar/demo)
 
