@@ -5,7 +5,7 @@ page](https://balzss.github.io/luxbar)
 ```html
 <div class="luxbar LUXBAR-STYLE-NAME">
     <input type="checkbox" id="luxbar-checkbox" class="luxbar-checkbox">
-    <div class="luxbar-menu-right luxbar-menu-dark">
+    <div class="luxbar-menu luxbar-menu-right luxbar-menu-dark">
         <ul class="luxbar-navigation">
             <li class="luxbar-header">
                 <a class="luxbar-brand" href="#">Brand</a>
