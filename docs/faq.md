@@ -21,7 +21,7 @@ Around 2KB miniefied and gzipped.
 
 ### How can I contribute to this project?
 
-Pick a bug from [here](https://github.com/balzss/luxbar/issues) or a feature from the TODO list above and let me know that you want to work on that at [balazs.saros@gmail.com](mailto:balazs.saros@gmail.com)
+Pick a bug from [here](https://github.com/balzss/luxbar/issues) or a feature from the TODO list above and let me know that you want to work on that at [balazs.saros@gmail.com](mailto:balazs.saros@gmail.com) or under the issue itself.
 
 ### I found a bug, what should I do?
 
