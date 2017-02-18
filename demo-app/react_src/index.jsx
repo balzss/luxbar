@@ -272,17 +272,17 @@ class Code extends React.Component {
       ReactDOMServer.renderToStaticMarkup(<li key={index} className="luxbar-item"><a href="#">{item}</a></li>)
     );
     const splitItems = listItems.join('\r\n            ');
-    const brandItem = this.props.brandVisibility ? '<a href="#" classN="luxbar-brand">LUXBAR</a>\n                ' : '';
+    const brandItem = this.props.brandVisibility ? '<a href="#" class="luxbar-brand">LUXBAR</a>\n                ' : '';
 
     return(
             <code>
             <pre><div id="htmlCode">
-{`<header id="luxbar" classNameN="luxbar-fixed">
+{`<header id="luxbar" class="${this.props.navbarStyle}">
     <input type="checkbox" id="luxbar-checkbox"/>
-    <div className="luxbar-menu ${this.props.menuAlignement} ${this.props.currentTheme}">
-        <ul className="luxbar-navigation">
-            <li className="luxbar-header">
-                ${brandItem}<label className="luxbar-hamburger ${this.props.hamburgerAnimation}" 
+    <div class="luxbar-menu ${this.props.menuAlignement} ${this.props.currentTheme}">
+        <ul class="luxbar-navigation">
+            <li class="luxbar-header">
+                ${brandItem}<label class="luxbar-hamburger ${this.props.hamburgerAnimation}" 
                 id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
             </li>
             ${splitItems}
