@@ -1,7 +1,7 @@
 {
   "name": "luxbar",
-  "version": "0.3.0",
-  "description": "Featherweight, Responsive, CSS Only Navigation bar",
+  "version": "0.3.1",
+  "description": "Featherweight, Responsive, CSS Only Navigation Bar",
   "scripts": {
     "build": "node-sass scss -o build  && postcss --use autoprefixer build/**/*.css -r && cssnano ./build/luxbar.css > ./build/luxbar.min.css",
     "postbuild": "copy \"./build/\" \"./\"",
@@ -14,14 +14,19 @@
   "keywords": [
     "CSS",
     "Navbar",
-    "Menu"
+    "Menu",
+    "Navigation bar"
   ],
   "author": "balzss",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/balzss/luxbar/issues"
   },
-  "homepage": "https://github.com/balzss/luxbar#readme",
+  "files": [
+    "build/",
+    "LICENSE"
+  ],
+  "homepage": "https://balzss.github.io/luxbar",
   "devDependencies": {
     "node-sass": "^4.4.0",
     "autoprefixer": "^6.6.1",
