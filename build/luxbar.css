@@ -168,7 +168,6 @@
   transform: rotate(225deg); }
 .luxbar-checkbox:checked + .luxbar-menu .luxbar-hamburger-doublespin span::after {
   transform: rotate(-225deg); }
-
 .luxbar-checkbox:checked + .luxbar-menu .luxbar-hamburger-spin span::before {
   transform: rotate(45deg); }
 .luxbar-checkbox:checked + .luxbar-menu .luxbar-hamburger-spin span::after {

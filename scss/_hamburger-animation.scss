@@ -11,7 +11,18 @@
                         transform: rotate(-225deg);
                     }
                 }
-        }
+            }
+            .luxbar-hamburger-spin {
+                span {
+                    &::before {
+                        transform: rotate(45deg);
+                    }
+
+                    &::after {
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
         }
     }
 }

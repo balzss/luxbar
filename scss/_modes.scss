@@ -1,0 +1,37 @@
+.luxbar-default {
+    width: 100%;
+    position: relative;
+    box-shadow: $luxbar-shadow;
+}
+
+.luxbar-static {
+    box-shadow: $luxbar-shadow;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .luxbar-checkbox {
+        &:checked ~.luxbar-menu {
+            position: absolute;
+        }
+    }
+}
+
+.luxbar-fixed {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: $luxbar-shadow;
+}
+
+.luxbar-fixed-bottom {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: $luxbar-shadow;
+}
