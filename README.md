@@ -4,7 +4,7 @@ Featherweight, Responsive, CSS Only Navigation bar
 
 ![Screencap](http://i.imgur.com/0eGzsNt.gif)
 
-[Try out all the options at the demo page!](https://balzss.github.io/luxbar/demo)
+[Try out all the options at the demo page!](https://balzss.github.io/luxbar)
 
 # Getting started
 
@@ -22,7 +22,7 @@ bower install luxbar
 
 Or use the CDN:
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/luxbar/0.2.0/luxbar.min.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
 ```
 
 Then head over [to the demo page] to generate your customized HTML code or use
