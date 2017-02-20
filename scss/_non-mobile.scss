@@ -12,7 +12,7 @@
         &:not(:checked) ~.luxbar-menu {
             overflow: visible;
         }
-        
+
         &:checked ~.luxbar-menu {
           height: $luxbar-height;
         }
@@ -39,7 +39,7 @@
             padding: 0;
         }
 
-        & > ul {
+        > ul {
             display: none;
 
             .luxbar-item {
