@@ -1,4 +1,4 @@
-/******* color variables *******/
+// ******* color variables *******
 $dark-bg: #212121;
 $dark-hl: #424242;
 $dark-fg: #fff;
@@ -35,7 +35,7 @@ $material-brown-bg: #3e2723;
 $material-brown-hl: #4e342e;
 $material-brown-fg: #fff;
 
-/******* default dark *******/
+// ******* default dark *******
 .luxbar-menu-dark,
 .luxbar-menu-dark .dropdown ul {
     background-color: $dark-bg;
@@ -57,7 +57,7 @@ $material-brown-fg: #fff;
     }
 }
 
-/******* default light *******/
+// ******* default light *******
 .luxbar-menu-light,
 .luxbar-menu-light .dropdown ul {
     background-color: $light-bg;
@@ -79,7 +79,7 @@ $material-brown-fg: #fff;
     }
 }
 
-/******* default material-red *******/
+// ******* default material-red *******
 .luxbar-menu-material-red,
 .luxbar-menu-material-red .dropdown ul {
     background-color: $material-red-bg;
@@ -101,7 +101,7 @@ $material-brown-fg: #fff;
     }
 }
 
-/******* default material-indigo *******/
+// ******* default material-indigo *******
 .luxbar-menu-material-indigo,
 .luxbar-menu-material-indigo .dropdown ul {
     background-color: $material-indigo-bg;
@@ -123,7 +123,7 @@ $material-brown-fg: #fff;
     }
 }
 
-/******* default material-green *******/
+// ******* default material-green *******
 .luxbar-menu-material-green,
 .luxbar-menu-material-green .dropdown ul {
     background-color: $material-green-bg;
@@ -145,7 +145,7 @@ $material-brown-fg: #fff;
     }
 }
 
-/******* default material-amber *******/
+// ******* default material-amber *******
 .luxbar-menu-material-amber,
 .luxbar-menu-material-amber .dropdown ul {
     background-color: $material-amber-bg;
@@ -167,7 +167,7 @@ $material-brown-fg: #fff;
     }
 }
 
-/******* default material-brown *******/
+// ******* default material-brown *******
 .luxbar-menu-material-brown,
 .luxbar-menu-material-brown .dropdown ul {
     background-color: $material-brown-bg;
@@ -189,7 +189,7 @@ $material-brown-fg: #fff;
     }
 }
 
-/******* default material-bluegrey *******/
+// ******* default material-bluegrey *******
 .luxbar-menu-material-bluegrey,
 .luxbar-menu-material-bluegrey .dropdown ul {
     background-color: $material-bluegrey-bg;
@@ -211,7 +211,7 @@ $material-brown-fg: #fff;
     }
 }
 
-/******* default material-cyan *******/
+// ******* default material-cyan *******
 .luxbar-menu-material-cyan,
 .luxbar-menu-material-cyan .dropdown ul {
     background-color: $material-cyan-bg;
