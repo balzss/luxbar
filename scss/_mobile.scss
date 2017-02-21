@@ -27,7 +27,8 @@
 }
 
 .luxbar-menu-left {
-    .luxbar-navigation, .luxbar-header {
+    .luxbar-navigation,
+    .luxbar-header {
         justify-content: flex-start;
     }
 }
@@ -132,7 +133,7 @@
         min-width: 100%;
     }
 
-    & > a {
+    > a {
         &::after {
             $expand-arrow-height: 5px;
 
@@ -146,7 +147,7 @@
         }
     }
 
-    & > ul {
+    > ul {
         display: block;
         overflow-x: hidden;
         list-style: none;
