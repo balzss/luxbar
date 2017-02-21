@@ -18,7 +18,7 @@
     }
 }
 
-.luxbar-header {
+.#{$luxbar-css-prefix}-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -26,31 +26,31 @@
     height: $luxbar-height;
 }
 
-.luxbar-menu-left {
-    .luxbar-navigation,
-    .luxbar-header {
+.#{$luxbar-css-prefix}-menu-left {
+    .#{$luxbar-css-prefix}-navigation,
+    .#{$luxbar-css-prefix}-header {
         justify-content: flex-start;
     }
 }
 
-.luxbar-menu-right {
-    .luxbar-hamburger {
+.#{$luxbar-css-prefix}-menu-right {
+    .#{$luxbar-css-prefix}-hamburger {
         margin-left: auto;
     }
 }
 
-.luxbar-brand {
+.#{$luxbar-css-prefix}-brand {
     font-size: 1.6em;
     padding: $luxbar-padding;
 }
 
-.luxbar-menu {
+.#{$luxbar-css-prefix}-menu {
     min-height: $luxbar-height;
     transition: $luxbar-transition;
     width: 100%;
 }
 
-.luxbar-navigation {
+.#{$luxbar-css-prefix}-navigation {
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -58,8 +58,8 @@
     margin: 0;
 }
 
-.luxbar-menu,
-.luxbar-item {
+.#{$luxbar-css-prefix}-menu,
+.#{$luxbar-css-prefix}-item {
     a {
         text-decoration: none;
         color: inherit;
@@ -67,7 +67,7 @@
     }
 }
 
-.luxbar-item {
+.#{$luxbar-css-prefix}-item {
     height: $luxbar-height;
 
     a {
@@ -76,7 +76,7 @@
     }
 }
 
-.luxbar-hamburger {
+.#{$luxbar-css-prefix}-hamburger {
     padding: $luxbar-padding;
     position: relative;
     cursor: pointer;
@@ -101,21 +101,21 @@
     }
 }
 
-.luxbar-checkbox {
+.#{$luxbar-css-prefix}-checkbox {
     display: none;
 
-    &:not(:checked) ~.luxbar-menu {
+    &:not(:checked) ~.#{$luxbar-css-prefix}-menu {
         overflow: hidden;
         height: $luxbar-height;
     }
 
-    &:checked ~.luxbar-menu {
+    &:checked ~.#{$luxbar-css-prefix}-menu {
         transition: height $luxbar-transition;
         height: 100vh;
         overflow: auto;
 
         li {
-            .luxbar-hamburger {
+            .#{$luxbar-css-prefix}-hamburger {
                 @extend %hamburger-lines;
             }
         }
@@ -153,7 +153,7 @@
         list-style: none;
         padding: 0;
 
-        .luxbar-item {
+        .#{$luxbar-css-prefix}-item {
             min-width: 100%;
             height: $luxbar-height / 2;
             padding: 5px 10px 5px 40px;

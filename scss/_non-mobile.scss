@@ -1,31 +1,31 @@
 @media screen and (min-width: 768px) {
-    .luxbar-navigation {
+    .#{$luxbar-css-prefix}-navigation {
         flex-flow: row;
         justify-content: flex-end;
     }
 
-    .luxbar-hamburger {
+    .#{$luxbar-css-prefix}-hamburger {
         display: none;
     }
 
-    .luxbar-checkbox {
-        &:not(:checked) ~.luxbar-menu {
+    .#{$luxbar-css-prefix}-checkbox {
+        &:not(:checked) ~.#{$luxbar-css-prefix}-menu {
             overflow: visible;
         }
 
-        &:checked ~.luxbar-menu {
+        &:checked ~.#{$luxbar-css-prefix}-menu {
           height: $luxbar-height;
         }
     }
 
-    .luxbar-menu {
-        .luxbar-item {
+    .#{$luxbar-css-prefix}-menu {
+        .#{$luxbar-css-prefix}-item {
             border-top: 0;
         }
 
     }
 
-    .luxbar-menu-right .luxbar-header {
+    .#{$luxbar-css-prefix}-menu-right .#{$luxbar-css-prefix}-header {
         margin-right: auto;
     }
 
@@ -42,7 +42,7 @@
         > ul {
             display: none;
 
-            .luxbar-item {
+            .#{$luxbar-css-prefix}-item {
                 padding: 5px 10px;
 
                 a {
