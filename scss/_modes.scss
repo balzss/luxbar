@@ -14,7 +14,7 @@
     z-index: 1000;
 
     .#{$luxbar-css-prefix}-checkbox {
-        &:checked ~.luxbar-menu {
+        &:checked ~.#{$luxbar-css-prefix}-menu {
             position: absolute;
         }
     }

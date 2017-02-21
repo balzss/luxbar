@@ -27,14 +27,14 @@
 }
 
 .#{$luxbar-css-prefix}-menu-left {
-    .luxbar-navigation,
-    .luxbar-header {
+    .#{$luxbar-css-prefix}-navigation,
+    .#{$luxbar-css-prefix}-header {
         justify-content: flex-start;
     }
 }
 
 .#{$luxbar-css-prefix}-menu-right {
-    .luxbar-hamburger {
+    .#{$luxbar-css-prefix}-hamburger {
         margin-left: auto;
     }
 }
@@ -104,18 +104,18 @@
 .#{$luxbar-css-prefix}-checkbox {
     display: none;
 
-    &:not(:checked) ~.luxbar-menu {
+    &:not(:checked) ~.#{$luxbar-css-prefix}-menu {
         overflow: hidden;
         height: $luxbar-height;
     }
 
-    &:checked ~.luxbar-menu {
+    &:checked ~.#{$luxbar-css-prefix}-menu {
         transition: height $luxbar-transition;
         height: 100vh;
         overflow: auto;
 
         li {
-            .luxbar-hamburger {
+            .#{$luxbar-css-prefix}-hamburger {
                 @extend %hamburger-lines;
             }
         }
