@@ -1,6 +1,6 @@
 {
   "name": "luxbar",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "homepage": "https://balzss.github.io/luxbar",
   "authors": [
     "balzss <balazs.saros@gmail.com>"
@@ -15,5 +15,11 @@
     "menu"
   ],
   "license": "MIT",
-  "ignore": ["*", "!build/*", "!LICENSE"]
+  "ignore": [
+      "*", 
+      "!scss/*", 
+      "!build/*", 
+      "!README.md", 
+      "!LICENSE"
+  ]
 }
