@@ -25,12 +25,12 @@ Or use the CDN:
 <link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
 ```
 
-Then head over [to the demo page] to generate your customized HTML code or use
+Then head over [to the demo page](https://balzss.github.io/luxbar) to generate your customized HTML code or use
 the one below as a base and see the docs for options. (Demo page is highly
 recommended for the newcomers)
 
 ```html
-<div class="luxbar LUXBAR-STYLE-NAME">
+<div class="luxbar luxbar-static">
     <input type="checkbox" id="luxbar-checkbox" class="luxbar-checkbox">
     <div class="luxbar-menu luxbar-menu-right luxbar-menu-dark">
         <ul class="luxbar-navigation">

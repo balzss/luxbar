@@ -3,7 +3,7 @@ More info on customization can be found in the [demo
 page](https://balzss.github.io/luxbar)
 
 ```html
-<div class="luxbar LUXBAR-STYLE-NAME">
+<div class="luxbar luxbar-static">
     <input type="checkbox" id="luxbar-checkbox" class="luxbar-checkbox">
     <div class="luxbar-menu luxbar-menu-right luxbar-menu-dark">
         <ul class="luxbar-navigation">
