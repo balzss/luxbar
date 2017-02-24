@@ -1,7 +1,7 @@
-.luxbar-checkbox {
+.#{$luxbar-css-prefix}-checkbox {
     &:checked {
-        + .luxbar-menu {
-            .luxbar-hamburger-doublespin {
+        + .#{$luxbar-css-prefix}-menu {
+            .#{$luxbar-css-prefix}-hamburger-doublespin {
                 span {
                     &::before {
                         transform: rotate(225deg);
@@ -13,7 +13,7 @@
                 }
             }
 
-            .luxbar-hamburger-spin {
+            .#{$luxbar-css-prefix}-hamburger-spin {
                 span {
                     &::before {
                         transform: rotate(45deg);

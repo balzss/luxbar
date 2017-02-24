@@ -36,19 +36,19 @@ $material-brown-hl: #4e342e;
 $material-brown-fg: #fff;
 
 // ******* default dark *******
-.luxbar-menu-dark,
-.luxbar-menu-dark .dropdown ul {
+.#{$luxbar-css-prefix}-menu-dark,
+.#{$luxbar-css-prefix}-menu-dark .dropdown ul {
     background-color: $dark-bg;
     color: $dark-fg;
 }
 
-.luxbar-menu-dark {
+.#{$luxbar-css-prefix}-menu-dark {
     .active,
-    .luxbar-item:hover {
+    .#{$luxbar-css-prefix}-item:hover {
         background-color: $dark-hl;
     }
 
-    .luxbar-hamburger {
+    .#{$luxbar-css-prefix}-hamburger {
         span,
         span::before,
         span::after {
@@ -58,19 +58,19 @@ $material-brown-fg: #fff;
 }
 
 // ******* default light *******
-.luxbar-menu-light,
-.luxbar-menu-light .dropdown ul {
+.#{$luxbar-css-prefix}-menu-light,
+.#{$luxbar-css-prefix}-menu-light .dropdown ul {
     background-color: $light-bg;
     color: $light-fg;
 }
 
-.luxbar-menu-light {
+.#{$luxbar-css-prefix}-menu-light {
     .active,
-    .luxbar-item:hover {
+    .#{$luxbar-css-prefix}-item:hover {
         background-color: $light-hl;
     }
 
-    .luxbar-hamburger {
+    .#{$luxbar-css-prefix}-hamburger {
         span,
         span::before,
         span::after {
@@ -80,19 +80,19 @@ $material-brown-fg: #fff;
 }
 
 // ******* default material-red *******
-.luxbar-menu-material-red,
-.luxbar-menu-material-red .dropdown ul {
+.#{$luxbar-css-prefix}-menu-material-red,
+.#{$luxbar-css-prefix}-menu-material-red .dropdown ul {
     background-color: $material-red-bg;
     color: $material-red-fg;
 }
 
-.luxbar-menu-material-red {
+.#{$luxbar-css-prefix}-menu-material-red {
     .active,
-    .luxbar-item:hover {
+    .#{$luxbar-css-prefix}-item:hover {
         background-color: $material-red-hl;
     }
 
-    .luxbar-hamburger {
+    .#{$luxbar-css-prefix}-hamburger {
         span,
         span::before,
         span::after {
@@ -102,19 +102,19 @@ $material-brown-fg: #fff;
 }
 
 // ******* default material-indigo *******
-.luxbar-menu-material-indigo,
-.luxbar-menu-material-indigo .dropdown ul {
+.#{$luxbar-css-prefix}-menu-material-indigo,
+.#{$luxbar-css-prefix}-menu-material-indigo .dropdown ul {
     background-color: $material-indigo-bg;
     color: $material-indigo-fg;
 }
 
-.luxbar-menu-material-indigo {
+.#{$luxbar-css-prefix}-menu-material-indigo {
     .active,
-    .luxbar-item:hover {
+    .#{$luxbar-css-prefix}-item:hover {
         background-color: $material-indigo-hl;
     }
 
-    .luxbar-hamburger {
+    .#{$luxbar-css-prefix}-hamburger {
         span,
         span::before,
         span::after {
@@ -124,19 +124,19 @@ $material-brown-fg: #fff;
 }
 
 // ******* default material-green *******
-.luxbar-menu-material-green,
-.luxbar-menu-material-green .dropdown ul {
+.#{$luxbar-css-prefix}-menu-material-green,
+.#{$luxbar-css-prefix}-menu-material-green .dropdown ul {
     background-color: $material-green-bg;
     color: $material-green-fg;
 }
 
-.luxbar-menu-material-green {
+.#{$luxbar-css-prefix}-menu-material-green {
     .active,
-    .luxbar-item:hover {
+    .#{$luxbar-css-prefix}-item:hover {
         background-color: $material-green-hl;
     }
 
-    .luxbar-hamburger {
+    .#{$luxbar-css-prefix}-hamburger {
         span,
         span::before,
         span::after {
@@ -146,19 +146,19 @@ $material-brown-fg: #fff;
 }
 
 // ******* default material-amber *******
-.luxbar-menu-material-amber,
-.luxbar-menu-material-amber .dropdown ul {
+.#{$luxbar-css-prefix}-menu-material-amber,
+.#{$luxbar-css-prefix}-menu-material-amber .dropdown ul {
     background-color: $material-amber-bg;
     color: $material-amber-fg;
 }
 
-.luxbar-menu-material-amber {
+.#{$luxbar-css-prefix}-menu-material-amber {
     .active,
-    .luxbar-item:hover {
+    .#{$luxbar-css-prefix}-item:hover {
         background-color: $material-amber-hl;
     }
 
-    .luxbar-hamburger {
+    .#{$luxbar-css-prefix}-hamburger {
         span,
         span::before,
         span::after {
@@ -168,19 +168,19 @@ $material-brown-fg: #fff;
 }
 
 // ******* default material-brown *******
-.luxbar-menu-material-brown,
-.luxbar-menu-material-brown .dropdown ul {
+.#{$luxbar-css-prefix}-menu-material-brown,
+.#{$luxbar-css-prefix}-menu-material-brown .dropdown ul {
     background-color: $material-brown-bg;
     color: $material-brown-fg;
 }
 
-.luxbar-menu-material-brown {
+.#{$luxbar-css-prefix}-menu-material-brown {
     .active,
-    .luxbar-item:hover {
+    .#{$luxbar-css-prefix}-item:hover {
         background-color: $material-brown-hl;
     }
 
-    .luxbar-hamburger {
+    .#{$luxbar-css-prefix}-hamburger {
         span,
         span::before,
         span::after {
@@ -190,19 +190,19 @@ $material-brown-fg: #fff;
 }
 
 // ******* default material-bluegrey *******
-.luxbar-menu-material-bluegrey,
-.luxbar-menu-material-bluegrey .dropdown ul {
+.#{$luxbar-css-prefix}-menu-material-bluegrey,
+.#{$luxbar-css-prefix}-menu-material-bluegrey .dropdown ul {
     background-color: $material-bluegrey-bg;
     color: $material-bluegrey-fg;
 }
 
-.luxbar-menu-material-bluegrey {
+.#{$luxbar-css-prefix}-menu-material-bluegrey {
     .active,
-    .luxbar-item:hover {
+    .#{$luxbar-css-prefix}-item:hover {
         background-color: $material-bluegrey-hl;
     }
 
-    .luxbar-hamburger {
+    .#{$luxbar-css-prefix}-hamburger {
         span,
         span::before,
         span::after {
@@ -212,19 +212,19 @@ $material-brown-fg: #fff;
 }
 
 // ******* default material-cyan *******
-.luxbar-menu-material-cyan,
-.luxbar-menu-material-cyan .dropdown ul {
+.#{$luxbar-css-prefix}-menu-material-cyan,
+.#{$luxbar-css-prefix}-menu-material-cyan .dropdown ul {
     background-color: $material-cyan-bg;
     color: $material-cyan-fg;
 }
 
-.luxbar-menu-material-cyan {
+.#{$luxbar-css-prefix}-menu-material-cyan {
     .active,
-    .luxbar-item:hover {
+    .#{$luxbar-css-prefix}-item:hover {
         background-color: $material-cyan-hl;
     }
 
-    .luxbar-hamburger {
+    .#{$luxbar-css-prefix}-hamburger {
         span,
         span::before,
         span::after {

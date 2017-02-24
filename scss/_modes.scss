@@ -1,11 +1,11 @@
-.luxbar-default {
+.#{$luxbar-css-prefix}-default {
     width: 100%;
     position: relative;
     box-shadow: $luxbar-shadow;
     z-index: 1000;
 }
 
-.luxbar-static {
+.#{$luxbar-css-prefix}-static {
     box-shadow: $luxbar-shadow;
     width: 100%;
     position: absolute;
@@ -13,14 +13,14 @@
     left: 0;
     z-index: 1000;
 
-    .luxbar-checkbox {
-        &:checked ~.luxbar-menu {
+    .#{$luxbar-css-prefix}-checkbox {
+        &:checked ~.#{$luxbar-css-prefix}-menu {
             position: absolute;
         }
     }
 }
 
-.luxbar-fixed {
+.#{$luxbar-css-prefix}-fixed {
     width: 100%;
     position: fixed;
     top: 0;
@@ -29,7 +29,7 @@
     box-shadow: $luxbar-shadow;
 }
 
-.luxbar-fixed-bottom {
+.#{$luxbar-css-prefix}-fixed-bottom {
     width: 100%;
     position: fixed;
     bottom: 0;
