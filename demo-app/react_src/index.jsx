@@ -278,7 +278,7 @@ class Code extends React.Component {
             <code>
             <pre><div id="htmlCode">
 {`<header id="luxbar" class="${this.props.navbarStyle}">
-    <input type="checkbox" id="luxbar-checkbox"/>
+    <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox"/>
     <div class="luxbar-menu ${this.props.menuAlignement} ${this.props.currentTheme}">
         <ul class="luxbar-navigation">
             <li class="luxbar-header">
