@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $luxbar-breakpoint) {
     .#{$luxbar-css-prefix}-navigation {
         flex-flow: row;
         justify-content: flex-end;
