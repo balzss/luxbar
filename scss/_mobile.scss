@@ -112,7 +112,7 @@
     &:checked ~.#{$luxbar-css-prefix}-menu {
         transition: height $luxbar-transition;
         height: 100vh;
-        overflow: auto;
+        overflow: hidden;
 
         li {
             .#{$luxbar-css-prefix}-hamburger {
