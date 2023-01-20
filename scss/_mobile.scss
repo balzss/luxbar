@@ -140,7 +140,7 @@
             position: absolute;
             content: '';
             right: 10px;
-            top: $luxbar-height / 2 - $expand-arrow-height + 1px;
+            top: calc(#{$luxbar-height} / 2 - #{$expand-arrow-height} + 1px);
             border-width: $expand-arrow-height $expand-arrow-height 0;
             border-color: transparent;
             border-style: solid;
@@ -155,12 +155,12 @@
 
         .#{$luxbar-css-prefix}-item {
             min-width: 100%;
-            height: $luxbar-height / 2;
+            height: calc(#{$luxbar-height} / 2);
             padding: 5px 10px 5px 40px;
 
             a {
-                min-height: $luxbar-height / 2;
-                line-height: $luxbar-height / 2;
+                min-height: calc(#{$luxbar-height} / 2);
+                line-height: calc(#{$luxbar-height} / 2);
                 padding: 0;
             }
         }
