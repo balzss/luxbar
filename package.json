@@ -1,6 +1,6 @@
 {
   "name": "luxbar",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Featherweight, Responsive, CSS Only Navigation Bar",
   "scripts": {
     "build": "node-sass scss -o build  && postcss --use autoprefixer build/**/*.css -r && cssnano ./build/luxbar.css > ./build/luxbar.min.css",
